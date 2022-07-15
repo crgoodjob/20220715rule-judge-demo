@@ -1,0 +1,115 @@
+server:
+  port: 9090
+  uri-encoding: utf-8
+  servlet:
+    context-path: /
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  application:
+    name: maitian-assets-service
+  servlet:
+    multipart: #图片上传大小配置
+      max-file-size: 15MB
+      max-request-size: 135MB
+  datasource:
+    druid:
+      stat-view-servlet:
+        enabled: true
+        loginUsername: admin
+        loginPassword: 123456
+        allow:
+      web-stat-filter:
+        enabled: true
+    dynamic:
+      druid: # 全局druid参数，绝大部分值和默认保持一致。(现已支持的参数如下,不清楚含义不要乱设置)
+        # 连接池的配置信息
+        # 初始化大小，最小，最大
+        initial-size: 5
+        min-idle: 5
+        maxActive: 20
+        # 配置获取连接等待超时的时间
+        maxWait: 60000
+        # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+        timeBetweenEvictionRunsMillis: 60000
+        # 配置一个连接在池中最小生存的时间，单位是毫秒
+        minEvictableIdleTimeMillis: 300000
+        #validationQuery: select 'x'  # mysql
+        validationQuery: SELECT 1 FROM DUAL
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        # 打开PSCache，并且指定每个连接上PSCache的大小
+        poolPreparedStatements: true
+        maxPoolPreparedStatementPerConnectionSize: 20
+        # 配置监控统计拦截的filters，stat去掉后监控界面sql无法统计，'wall'用于防火墙
+        filters: stat,wall,slf4j
+        wall:
+          multiStatementAllow: true
+          noneBaseStatementAllow: true
+          commentAllow: true
+        # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+        connectionProperties: druid.stat.mergeSql\=true;druid.stat.slowSqlMillis\=5000
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        master:
+          driver-class-name: oracle.jdbc.OracleDriver
+          url: jdbc:oracle:thin:@172.16.12.133:1521/BSSBAKPDB17_20220622
+          username: BSS_HTS_BEIJING
+          password: BSS_HTS_BEIJING
+#mybatis plus 设置
+mybatis-plus:
+  type-aliases-package: cn.maitian.bss.modules..model
+  mapper-locations: classpath*:cn/maitian/bss/modules/**/xml/*Mapper.xml
+  global-config:
+    # 关闭MP3.0自带的banner
+    banner: false
+    db-config:
+      #主键类型  0:"数据库ID自增",1:"该类型为未设置主键类型", 2:"用户输入ID",3:"全局唯一ID (数字类型唯一ID)", 4:"全局唯一ID UUID",5:"字符串全局唯一ID (idWorker 的字符串表示)";
+      id-type: 4
+      # 默认数据库表下划线命名
+      table-underline: true
+  configuration:
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 返回类型为Map,显示null对应的字段
+    call-setters-on-nulls: true
+
+# 系统配置
+mt:
+  bss:
+    assets:
+      showShopRoleNames:
+        - "assets_area_assistant"    #区域助理
+        - "assets_area_manager"      #区域经理
+      noShowShopRoleNames:
+        - "assets_shop_manager"       #店长或见习店长
+        - "assets_dept_gm_assistant"  #事业部总经理助理
+      businessRoleNames:
+        - "assets_dept_gm_assistant"  #事业部总经理助理
+      processScrapKey: "Process_Zc_Asset_Scrap"
+      processTransforKey: "Process_Zc_Asset_Transfor"
+      processTransforWareKey: "Process_Zc_Asset_Transfor_WareHouse"
+      zcCheckProcessTenant: "zichan"  #固定资产 审核流程租户ID
+      zcCheckRoleName: "assets_commissioner"  #资产管理专员  角色编码
+
+    ## 图片配置
+    images:
+      # 内、外网地址
+      server-address: http://172.16.14.252:8080/FileUploadService/
+      server-address-out: http://172.16.14.252:8080/FileUploadService/
+      # 图片服务器上传url
+      server-uplod-url: servlet/uploadAssets.do
+
+    ## 事业部ID配置
+    office:
+       deptBusinessIds:
+         - "eb2137900f2411e58dd190e2ba5da21c" #京东北事业部
+         - "557b0ea26ff411e6bf3590e2ba5da21c" #京东南事业部
+         - "fc7f79d90f2411e59c9490e2ba5bbc4d" #京西北事业部
+         - "43be10b94de111e8a20e005056b71426" #京西南事业部

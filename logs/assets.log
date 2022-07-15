@@ -1,0 +1,926 @@
+2022-07-15 09:12:18.686  INFO 31408 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 31408 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 09:12:18.704  INFO 31408 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 09:12:22.645  INFO 31408 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 09:12:22.652  INFO 31408 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$64c89e52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 09:12:22.840  INFO 31408 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 09:12:23.569  INFO 31408 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 09:12:23.586  INFO 31408 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 09:12:23.587  INFO 31408 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 09:12:23.588  INFO 31408 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 09:12:24.058  INFO 31408 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 09:12:24.058  INFO 31408 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4779 ms
+2022-07-15 09:12:26.893  INFO 31408 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 09:12:26.895  INFO 31408 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 09:12:26.898  INFO 31408 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 09:12:31.398  INFO 31408 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 09:12:32.024  INFO 31408 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 09:12:32.434  WARN 31408 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 09:12:39.487  INFO 31408 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 09:12:39.490  INFO 31408 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 09:12:39.501  INFO 31408 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 09:12:39.517  INFO 31408 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 09:12:42.621  INFO 31408 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-15 09:12:43.246  INFO 31408 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 09:12:44.303  INFO 31408 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-15 09:12:44.340  INFO 31408 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-15 09:12:44.846  WARN 31408 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-15 09:12:44.900  INFO 31408 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 27.468 seconds (JVM running for 31.458)
+2022-07-15 09:12:45.843  INFO 31408 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 09:12:45.844  INFO 31408 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 09:12:45.850  INFO 31408 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-15 09:13:42.031 ERROR 31408 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 09:13:42.108 ERROR 31408 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-15 09:13:42.171 ERROR 31408 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-15 09:33:00.767  INFO 34564 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 34564 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 09:33:00.773  INFO 34564 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 09:33:04.674  INFO 34564 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 09:33:04.682  INFO 34564 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$9fc21fe6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 09:33:04.866  INFO 34564 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 09:33:05.619  INFO 34564 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 09:33:05.636  INFO 34564 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 09:33:05.637  INFO 34564 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 09:33:05.638  INFO 34564 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 09:33:06.123  INFO 34564 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 09:33:06.124  INFO 34564 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4782 ms
+2022-07-15 09:33:09.993  INFO 34564 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 09:33:09.995  INFO 34564 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 09:33:09.998  INFO 34564 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 09:33:14.797  INFO 34564 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 09:33:15.469  INFO 34564 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 09:33:15.914  WARN 34564 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 09:33:23.051  INFO 34564 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 09:33:23.053  INFO 34564 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 09:33:23.063  INFO 34564 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 09:33:23.081  INFO 34564 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 09:33:26.081  INFO 34564 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-15 09:33:26.701  INFO 34564 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 09:33:27.587  INFO 34564 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-15 09:33:27.620  INFO 34564 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-15 09:33:28.042  WARN 34564 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-15 09:33:28.084  INFO 34564 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 28.613 seconds (JVM running for 33.39)
+2022-07-15 09:33:29.506  INFO 34564 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 09:33:29.506  INFO 34564 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 09:33:29.512  INFO 34564 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-15 09:34:17.196 ERROR 34564 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 09:34:17.274 ERROR 34564 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-15 09:34:17.363 ERROR 34564 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-15 09:42:35.005 ERROR 34564 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 09:42:35.040 ERROR 34564 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-15 09:42:35.081 ERROR 34564 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-15 14:35:50.093  INFO 13452 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 13452 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 14:35:50.107  INFO 13452 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 14:35:55.545  INFO 13452 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 14:35:55.553  INFO 13452 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$fb96dc03] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 14:35:55.752  INFO 13452 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 14:35:56.521  INFO 13452 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 14:35:56.539  INFO 13452 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 14:35:56.540  INFO 13452 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 14:35:56.541  INFO 13452 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 14:35:57.012  INFO 13452 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 14:35:57.013  INFO 13452 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6294 ms
+2022-07-15 14:35:59.921  INFO 13452 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 14:35:59.923  INFO 13452 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 14:35:59.927  INFO 13452 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 14:36:04.670  INFO 13452 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 14:36:05.296  INFO 13452 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 14:36:05.785  WARN 13452 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 14:36:25.687  INFO 13452 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 14:36:25.691  INFO 13452 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 14:36:25.704  INFO 13452 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 14:36:25.720  INFO 13452 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 14:36:28.662  INFO 13452 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-15 14:36:29.359  INFO 13452 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 14:36:30.258  INFO 13452 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-15 14:36:30.294  INFO 13452 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-15 14:36:30.713  WARN 13452 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-15 14:36:30.753  INFO 13452 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 42.177 seconds (JVM running for 48.781)
+2022-07-15 14:36:32.869  INFO 13452 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 14:36:32.870  INFO 13452 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 14:36:32.876  INFO 13452 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-15 14:38:40.808 ERROR 13452 --- [nio-9090-exec-3] c.m.b.m.c.w.e.GlobalExceptionHandler     : Unexpected global [log]
+
+java.lang.RuntimeException: Unexpected global [log]
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.setGlobal(StatefulKnowledgeSessionImpl.java:1222)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl.test2(RuleLockSetServiceImpl.java:88)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl$$FastClassBySpringCGLIB$$21fee8fe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl$$EnhancerBySpringCGLIB$$d8e601a1.test2(<generated>)
+	at cn.maitian.bss.modules.change.web.ChangeController.test2(ChangeController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at cn.maitian.bss.modules.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-07-15 14:39:47.214 ERROR 13452 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 14:39:47.259 ERROR 13452 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-15 14:39:47.300 ERROR 13452 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-15 15:32:27.856  INFO 7280 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 7280 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 15:32:27.862  INFO 7280 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 15:32:31.820  INFO 7280 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 15:32:31.833  INFO 7280 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$d3106e1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 15:32:32.142  INFO 7280 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 15:32:33.010  INFO 7280 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 15:32:33.032  INFO 7280 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 15:32:33.034  INFO 7280 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 15:32:33.035  INFO 7280 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 15:32:33.539  INFO 7280 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 15:32:33.540  INFO 7280 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5112 ms
+2022-07-15 15:32:36.459  INFO 7280 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 15:32:36.460  INFO 7280 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 15:32:36.463  INFO 7280 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 15:32:40.994  INFO 7280 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 15:32:41.537  INFO 7280 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 15:32:41.957  WARN 7280 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 15:32:48.471  INFO 7280 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 15:32:48.473  INFO 7280 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 15:32:48.483  INFO 7280 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 15:32:48.511  INFO 7280 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 15:32:51.249  INFO 7280 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-15 15:32:51.953  INFO 7280 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 15:32:52.840  INFO 7280 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-15 15:32:52.878  INFO 7280 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-15 15:32:53.300  WARN 7280 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-15 15:32:53.340  INFO 7280 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 26.749 seconds (JVM running for 34.693)
+2022-07-15 15:32:55.069  INFO 7280 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 15:32:55.069  INFO 7280 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 15:32:55.073  INFO 7280 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-15 15:51:26.442 ERROR 7280 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 15:51:26.501 ERROR 7280 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-15 15:51:26.544 ERROR 7280 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-15 17:10:57.081  INFO 14192 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 14192 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 17:10:57.087  INFO 14192 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 17:11:00.938  INFO 14192 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:11:00.946  INFO 14192 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$a357193d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:11:01.134  INFO 14192 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:11:01.860  INFO 14192 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 17:11:01.880  INFO 14192 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 17:11:01.882  INFO 14192 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 17:11:01.882  INFO 14192 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 17:11:02.337  INFO 14192 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 17:11:02.338  INFO 14192 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4690 ms
+2022-07-15 17:11:05.178  INFO 14192 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 17:11:05.180  INFO 14192 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 17:11:05.183  INFO 14192 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 17:11:09.601  INFO 14192 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 17:11:10.193  INFO 14192 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 17:11:10.601  WARN 14192 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 17:11:17.438  INFO 14192 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 17:11:17.440  INFO 14192 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 17:11:17.448  INFO 14192 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 17:11:17.463  INFO 14192 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 17:11:20.239 ERROR 14192 --- [           main] o.d.c.kie.builder.impl.KieProject        : Unable to build KieBaseModel:change
+Rule Compilation error : [Rule name='judge5-1']
+	org.drools.compiler.kie.builder.impl.CompilationProblemAdapter@36bf903c
+	org.drools.compiler.kie.builder.impl.CompilationProblemAdapter@2a073f4f
+	org.drools.compiler.kie.builder.impl.CompilationProblemAdapter@55b9ffd0
+
+
+2022-07-15 17:11:20.243  WARN 14192 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [cn/maitian/bss/modules/config/KieConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=55, column=0
+   text=Rule Compilation error RuleTakeAwayOccupyVO cannot be resolved to a type
+RuleTakeAwayOccupyVO cannot be resolved to a type
+The method toSting() is undefined for the type BigDecimal]]
+2022-07-15 17:11:20.250  INFO 14192 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2022-07-15 17:11:20.257  INFO 14192 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-15 17:11:20.267  INFO 14192 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-15 17:11:20.267  INFO 14192 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2022-07-15 17:11:20.273  INFO 14192 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-15 17:11:20.280  WARN 14192 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-15 17:11:20.281  WARN 14192 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
+2022-07-15 17:11:20.282  WARN 14192 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-15 17:11:20.283  WARN 14192 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [OracleTimeoutPollingThread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ oracle.jdbc.driver.OracleTimeoutPollingThread.run(OracleTimeoutPollingThread.java:152)
+2022-07-15 17:11:20.307  INFO 14192 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 17:11:20.358 ERROR 14192 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [cn/maitian/bss/modules/config/KieConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=55, column=0
+   text=Rule Compilation error RuleTakeAwayOccupyVO cannot be resolved to a type
+RuleTakeAwayOccupyVO cannot be resolved to a type
+The method toSting() is undefined for the type BigDecimal]]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at cn.maitian.bss.modules.AssetsApplication.main(AssetsApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=55, column=0
+   text=Rule Compilation error RuleTakeAwayOccupyVO cannot be resolved to a type
+RuleTakeAwayOccupyVO cannot be resolved to a type
+The method toSting() is undefined for the type BigDecimal]]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=55, column=0
+   text=Rule Compilation error RuleTakeAwayOccupyVO cannot be resolved to a type
+RuleTakeAwayOccupyVO cannot be resolved to a type
+The method toSting() is undefined for the type BigDecimal]]
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBase(KieContainerImpl.java:442)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBaseFromKieSessionModel(KieContainerImpl.java:620)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:596)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:519)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:502)
+	at cn.maitian.bss.modules.change.utils.DroolsUtils.setKieContainer(DroolsUtils.java:22)
+	at cn.maitian.bss.modules.config.KieConfig.kieContainer(KieConfig.java:31)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$63b2cfdb.CGLIB$kieContainer$0(<generated>)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$63b2cfdb$$FastClassBySpringCGLIB$$820745dd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$63b2cfdb.kieContainer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+
+2022-07-15 17:15:32.208  INFO 7644 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 7644 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 17:15:32.214  INFO 7644 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 17:15:36.228  INFO 7644 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:15:36.235  INFO 7644 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$2a4ea73d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:15:36.450  INFO 7644 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:15:37.212  INFO 7644 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 17:15:37.230  INFO 7644 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 17:15:37.231  INFO 7644 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 17:15:37.232  INFO 7644 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 17:15:37.700  INFO 7644 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 17:15:37.700  INFO 7644 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4905 ms
+2022-07-15 17:15:40.641  INFO 7644 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 17:15:40.643  INFO 7644 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 17:15:40.646  INFO 7644 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 17:15:45.216  INFO 7644 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 17:15:45.828  INFO 7644 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 17:15:46.261  WARN 7644 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 17:15:55.493  INFO 7644 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 17:15:55.496  INFO 7644 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 17:15:55.508  INFO 7644 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 17:15:55.528  INFO 7644 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 17:15:58.429 ERROR 7644 --- [           main] o.d.c.kie.builder.impl.KieProject        : Unable to build KieBaseModel:change
+Rule Compilation error : [Rule name='judge5-1']
+	org.drools.compiler.kie.builder.impl.CompilationProblemAdapter@31bbcced
+
+
+2022-07-15 17:15:58.432  WARN 7644 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [cn/maitian/bss/modules/config/KieConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=56, column=0
+   text=Rule Compilation error The method toSting() is undefined for the type BigDecimal]]
+2022-07-15 17:15:58.439  INFO 7644 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2022-07-15 17:15:58.446  INFO 7644 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-15 17:15:58.456  INFO 7644 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-15 17:15:58.457  INFO 7644 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2022-07-15 17:15:58.463  INFO 7644 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-15 17:15:58.469  WARN 7644 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-15 17:15:58.470  WARN 7644 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
+2022-07-15 17:15:58.470  WARN 7644 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-15 17:15:58.471  WARN 7644 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [OracleTimeoutPollingThread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ oracle.jdbc.driver.OracleTimeoutPollingThread.run(OracleTimeoutPollingThread.java:152)
+2022-07-15 17:15:58.497  INFO 7644 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-15 17:15:58.548 ERROR 7644 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [cn/maitian/bss/modules/config/KieConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=56, column=0
+   text=Rule Compilation error The method toSting() is undefined for the type BigDecimal]]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at cn.maitian.bss.modules.AssetsApplication.main(AssetsApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=56, column=0
+   text=Rule Compilation error The method toSting() is undefined for the type BigDecimal]]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=56, column=0
+   text=Rule Compilation error The method toSting() is undefined for the type BigDecimal]]
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBase(KieContainerImpl.java:442)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBaseFromKieSessionModel(KieContainerImpl.java:620)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:596)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:519)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:502)
+	at cn.maitian.bss.modules.change.utils.DroolsUtils.setKieContainer(DroolsUtils.java:22)
+	at cn.maitian.bss.modules.config.KieConfig.kieContainer(KieConfig.java:31)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$eaaa5ddb.CGLIB$kieContainer$0(<generated>)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$eaaa5ddb$$FastClassBySpringCGLIB$$1689aff8.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$eaaa5ddb.kieContainer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+
+2022-07-15 17:16:34.802  INFO 2668 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 2668 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 17:16:34.808  INFO 2668 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 17:16:39.393  INFO 2668 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:16:39.401  INFO 2668 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$9c56e886] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:16:39.678  INFO 2668 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:16:40.957  INFO 2668 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 17:16:40.982  INFO 2668 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 17:16:40.983  INFO 2668 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 17:16:40.984  INFO 2668 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 17:16:41.841  INFO 2668 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 17:16:41.841  INFO 2668 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6432 ms
+2022-07-15 17:16:45.050  INFO 2668 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 17:16:45.051  INFO 2668 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 17:16:45.054  INFO 2668 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 17:16:49.555  INFO 2668 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 17:16:50.196  INFO 2668 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 17:16:50.666  WARN 2668 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 17:16:59.414  INFO 2668 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 17:16:59.417  INFO 2668 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 17:16:59.427  INFO 2668 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 17:16:59.443  INFO 2668 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 17:17:02.393  INFO 2668 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-15 17:17:03.031  INFO 2668 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 17:17:04.100  INFO 2668 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-15 17:17:04.136  INFO 2668 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-15 17:17:04.577  WARN 2668 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-15 17:17:04.617  INFO 2668 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 31.104 seconds (JVM running for 35.389)
+2022-07-15 17:17:06.218  INFO 2668 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 17:17:06.218  INFO 2668 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 17:17:06.223  INFO 2668 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-15 17:17:51.893 ERROR 2668 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 17:17:52.000 ERROR 2668 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-15 17:17:52.049 ERROR 2668 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-15 17:31:08.204  INFO 6848 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 6848 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-15 17:31:08.211  INFO 6848 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-15 17:31:12.527  INFO 6848 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:31:12.534  INFO 6848 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$b3111b9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:31:12.724  INFO 6848 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-15 17:31:13.444  INFO 6848 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-15 17:31:13.462  INFO 6848 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-15 17:31:13.464  INFO 6848 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-15 17:31:13.464  INFO 6848 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-15 17:31:13.918  INFO 6848 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-15 17:31:13.918  INFO 6848 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4912 ms
+2022-07-15 17:31:16.870  INFO 6848 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-15 17:31:16.873  INFO 6848 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-15 17:31:16.876  INFO 6848 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-15 17:31:21.740  INFO 6848 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-15 17:31:22.350  INFO 6848 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-15 17:31:22.771  WARN 6848 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-15 17:31:29.449  INFO 6848 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-15 17:31:29.452  INFO 6848 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-15 17:31:29.463  INFO 6848 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-15 17:31:29.479  INFO 6848 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-15 17:31:32.633  INFO 6848 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-15 17:31:33.247  INFO 6848 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-15 17:31:34.151  INFO 6848 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-15 17:31:34.186  INFO 6848 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-15 17:31:34.624  WARN 6848 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-15 17:31:34.665  INFO 6848 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 27.961 seconds (JVM running for 32.579)
+2022-07-15 17:31:35.617  INFO 6848 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-15 17:31:35.618  INFO 6848 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-15 17:31:35.623  INFO 6848 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-15 17:31:53.078 ERROR 6848 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 17:31:53.158 ERROR 6848 --- [nio-9090-exec-1] druid.sql.Statement                      : {conn-10005, pstmt-20005} execute error. INSERT INTO BSS_HTS_BEIJING.RULE_TAKE_AWAY_OCCUPY  ( TAKE_AWAY_ID,
+OCCUPY_ID )  VALUES  ( ?,
+? )
+
+java.sql.BatchUpdateException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeBatch(OraclePreparedStatement.java:9711)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeLargeBatch(T4CPreparedStatement.java:1447)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeBatch(OraclePreparedStatement.java:9487)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeBatch(OracleStatementWrapper.java:237)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3118)
+	at com.alibaba.druid.filter.FilterAdapter.statement_executeBatch(FilterAdapter.java:2507)
+	at com.alibaba.druid.filter.FilterEventAdapter.statement_executeBatch(FilterEventAdapter.java:279)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3116)
+	at com.alibaba.druid.wall.WallFilter.statement_executeBatch(WallFilter.java:546)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3116)
+	at com.alibaba.druid.filter.FilterAdapter.statement_executeBatch(FilterAdapter.java:2507)
+	at com.alibaba.druid.filter.FilterEventAdapter.statement_executeBatch(FilterEventAdapter.java:279)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3116)
+	at com.alibaba.druid.proxy.jdbc.StatementProxyImpl.executeBatch(StatementProxyImpl.java:202)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeBatch(DruidPooledPreparedStatement.java:565)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:78)
+	at com.sun.proxy.$Proxy238.executeBatch(Unknown Source)
+	at org.apache.ibatis.executor.BatchExecutor.doFlushStatements(BatchExecutor.java:123)
+	at org.apache.ibatis.executor.BaseExecutor.flushStatements(BaseExecutor.java:129)
+	at org.apache.ibatis.executor.BaseExecutor.flushStatements(BaseExecutor.java:122)
+	at org.apache.ibatis.executor.CachingExecutor.flushStatements(CachingExecutor.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy235.flushStatements(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.flushStatements(DefaultSqlSession.java:249)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.lambda$executeBatch$1(SqlHelper.java:219)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:178)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:213)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.executeBatch(ServiceImpl.java:240)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.saveBatch(ServiceImpl.java:136)
+	at com.baomidou.mybatisplus.extension.service.IService.saveBatch(IService.java:73)
+	at cn.maitian.bss.modules.change.service.impl.RuleTakeAwayOccupyServiceImpl.saveRuleTakeAwayOccupyList(RuleTakeAwayOccupyServiceImpl.java:24)
+	at cn.maitian.bss.modules.change.service.impl.RuleTakeAwayOccupyServiceImpl$$FastClassBySpringCGLIB$$7d57bb51.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.maitian.bss.modules.change.service.impl.RuleTakeAwayOccupyServiceImpl$$EnhancerBySpringCGLIB$$9dbc442f.saveRuleTakeAwayOccupyList(<generated>)
+	at change.Rule_judge5$u45$1138472544.defaultConsequence(Rule_judge5$u45$1138472544.java:136)
+	at change.Rule_judge5$u45$1138472544DefaultConsequenceInvokerGenerated.evaluate(Unknown Source)
+	at change.Rule_judge5$u45$1138472544DefaultConsequenceInvoker.evaluate(Unknown Source)
+	at org.drools.core.phreak.RuleExecutor.innerFireActivation(RuleExecutor.java:455)
+	at org.drools.core.phreak.RuleExecutor.fireActivation(RuleExecutor.java:402)
+	at org.drools.core.phreak.RuleExecutor.fire(RuleExecutor.java:158)
+	at org.drools.core.phreak.RuleExecutor.evaluateNetworkAndFire(RuleExecutor.java:110)
+	at org.drools.core.concurrent.AbstractRuleEvaluator.internalEvaluateAndFire(AbstractRuleEvaluator.java:33)
+	at org.drools.core.concurrent.SequentialRuleEvaluator.evaluateAndFire(SequentialRuleEvaluator.java:43)
+	at org.drools.core.common.DefaultAgenda.fireLoop(DefaultAgenda.java:869)
+	at org.drools.core.common.DefaultAgenda.internalFireAllRules(DefaultAgenda.java:816)
+	at org.drools.core.common.DefaultAgenda.fireAllRules(DefaultAgenda.java:808)
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.internalFireAllRules(StatefulKnowledgeSessionImpl.java:1343)
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.fireAllRules(StatefulKnowledgeSessionImpl.java:1334)
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.fireAllRules(StatefulKnowledgeSessionImpl.java:1318)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl.test2(RuleLockSetServiceImpl.java:102)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl$$FastClassBySpringCGLIB$$21fee8fe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl$$EnhancerBySpringCGLIB$$c3314156.test2(<generated>)
+	at cn.maitian.bss.modules.change.web.ChangeController.test2(ChangeController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at cn.maitian.bss.modules.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2022-07-15 17:31:53.259 ERROR 6848 --- [nio-9090-exec-1] c.m.b.m.c.w.e.GlobalExceptionHandler     : Exception executing consequence for rule "judge5-1" in change: org.springframework.dao.DuplicateKeyException: cn.maitian.bss.modules.change.dao.RuleTakeAwayOccupyMapper.insert (batch index #1) failed. Cause: java.sql.BatchUpdateException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+; ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+; nested exception is java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+
+org.kie.api.runtime.rule.ConsequenceException: Exception executing consequence for rule "judge5-1" in change: org.springframework.dao.DuplicateKeyException: cn.maitian.bss.modules.change.dao.RuleTakeAwayOccupyMapper.insert (batch index #1) failed. Cause: java.sql.BatchUpdateException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+; ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+; nested exception is java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+	at org.drools.core.runtime.rule.impl.DefaultConsequenceExceptionHandler.handleException(DefaultConsequenceExceptionHandler.java:39)
+	at org.drools.core.common.DefaultAgenda.handleException(DefaultAgenda.java:1056)
+	at org.drools.core.phreak.RuleExecutor.innerFireActivation(RuleExecutor.java:462)
+	at org.drools.core.phreak.RuleExecutor.fireActivation(RuleExecutor.java:402)
+	at org.drools.core.phreak.RuleExecutor.fire(RuleExecutor.java:158)
+	at org.drools.core.phreak.RuleExecutor.evaluateNetworkAndFire(RuleExecutor.java:110)
+	at org.drools.core.concurrent.AbstractRuleEvaluator.internalEvaluateAndFire(AbstractRuleEvaluator.java:33)
+	at org.drools.core.concurrent.SequentialRuleEvaluator.evaluateAndFire(SequentialRuleEvaluator.java:43)
+	at org.drools.core.common.DefaultAgenda.fireLoop(DefaultAgenda.java:869)
+	at org.drools.core.common.DefaultAgenda.internalFireAllRules(DefaultAgenda.java:816)
+	at org.drools.core.common.DefaultAgenda.fireAllRules(DefaultAgenda.java:808)
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.internalFireAllRules(StatefulKnowledgeSessionImpl.java:1343)
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.fireAllRules(StatefulKnowledgeSessionImpl.java:1334)
+	at org.drools.core.impl.StatefulKnowledgeSessionImpl.fireAllRules(StatefulKnowledgeSessionImpl.java:1318)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl.test2(RuleLockSetServiceImpl.java:102)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl$$FastClassBySpringCGLIB$$21fee8fe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.maitian.bss.modules.change.service.impl.RuleLockSetServiceImpl$$EnhancerBySpringCGLIB$$c3314156.test2(<generated>)
+	at cn.maitian.bss.modules.change.web.ChangeController.test2(ChangeController.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at cn.maitian.bss.modules.security.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:49)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:219)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:213)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.dao.DuplicateKeyException: cn.maitian.bss.modules.change.dao.RuleTakeAwayOccupyMapper.insert (batch index #1) failed. Cause: java.sql.BatchUpdateException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+; ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+; nested exception is java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:188)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:213)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.executeBatch(ServiceImpl.java:240)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.saveBatch(ServiceImpl.java:136)
+	at com.baomidou.mybatisplus.extension.service.IService.saveBatch(IService.java:73)
+	at cn.maitian.bss.modules.change.service.impl.RuleTakeAwayOccupyServiceImpl.saveRuleTakeAwayOccupyList(RuleTakeAwayOccupyServiceImpl.java:24)
+	at cn.maitian.bss.modules.change.service.impl.RuleTakeAwayOccupyServiceImpl$$FastClassBySpringCGLIB$$7d57bb51.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at cn.maitian.bss.modules.change.service.impl.RuleTakeAwayOccupyServiceImpl$$EnhancerBySpringCGLIB$$9dbc442f.saveRuleTakeAwayOccupyList(<generated>)
+	at change.Rule_judge5$u45$1138472544.defaultConsequence(Rule_judge5$u45$1138472544.java:136)
+	at change.Rule_judge5$u45$1138472544DefaultConsequenceInvokerGenerated.evaluate(Unknown Source)
+	at change.Rule_judge5$u45$1138472544DefaultConsequenceInvoker.evaluate(Unknown Source)
+	at org.drools.core.phreak.RuleExecutor.innerFireActivation(RuleExecutor.java:455)
+	... 125 common frames omitted
+Caused by: java.sql.SQLIntegrityConstraintViolationException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:509)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:461)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1104)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:553)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:269)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:655)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:270)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:91)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:970)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeForRowsWithTimeout(OraclePreparedStatement.java:9452)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeLargeBatch(OraclePreparedStatement.java:9556)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeLargeBatch(T4CPreparedStatement.java:1447)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeBatch(OraclePreparedStatement.java:9487)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeBatch(OracleStatementWrapper.java:237)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3118)
+	at com.alibaba.druid.filter.FilterAdapter.statement_executeBatch(FilterAdapter.java:2507)
+	at com.alibaba.druid.filter.FilterEventAdapter.statement_executeBatch(FilterEventAdapter.java:279)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3116)
+	at com.alibaba.druid.wall.WallFilter.statement_executeBatch(WallFilter.java:546)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3116)
+	at com.alibaba.druid.filter.FilterAdapter.statement_executeBatch(FilterAdapter.java:2507)
+	at com.alibaba.druid.filter.FilterEventAdapter.statement_executeBatch(FilterEventAdapter.java:279)
+	at com.alibaba.druid.filter.FilterChainImpl.statement_executeBatch(FilterChainImpl.java:3116)
+	at com.alibaba.druid.proxy.jdbc.StatementProxyImpl.executeBatch(StatementProxyImpl.java:202)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeBatch(DruidPooledPreparedStatement.java:565)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:78)
+	at com.sun.proxy.$Proxy238.executeBatch(Unknown Source)
+	at org.apache.ibatis.executor.BatchExecutor.doFlushStatements(BatchExecutor.java:123)
+	at org.apache.ibatis.executor.BaseExecutor.flushStatements(BaseExecutor.java:129)
+	at org.apache.ibatis.executor.BaseExecutor.flushStatements(BaseExecutor.java:122)
+	at org.apache.ibatis.executor.CachingExecutor.flushStatements(CachingExecutor.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at com.sun.proxy.$Proxy235.flushStatements(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.flushStatements(DefaultSqlSession.java:249)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.lambda$executeBatch$1(SqlHelper.java:219)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:178)
+	... 138 common frames omitted
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00001: 违反唯一约束条件 (BSS_HTS_BEIJING.PK_RULE_TAKE_AWAY_OCCUPY)
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:513)
+	... 181 common frames omitted
+
+2022-07-15 17:34:59.835 ERROR 6848 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-15 17:34:59.891 ERROR 6848 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-15 17:34:59.950 ERROR 6848 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合

@@ -1,0 +1,66 @@
+package change;
+import cn.maitian.bss.modules.change.model.RuleJudgeTakeAway
+import cn.maitian.bss.modules.change.vo.RuleJudgeVO
+import java.util.ArrayList
+
+global java.util.ArrayList ruleList
+
+// 向中间对象set必要信息
+rule "judge1"
+no-loop true
+salience 90
+when
+    // 没有任命记录，暂时使用 可带人员限量判定结果 子表
+    // 任命异动类型为：大店区经晋升 或 业务经理晋升
+    //$take : RuleJudgeTakeAway(changeType == "f1" || changeType == "g1")
+    $take : RuleJudgeTakeAway()
+then
+    RuleJudgeVO resultVO = new RuleJudgeVO();
+    resultVO.setTakeAwayId($take.getId());
+    resultVO.setAppointName($take.getAppointName());
+    resultVO.setAppointOldId($take.getAppointOldId());
+    resultVO.setIdCard($take.getIdCard());
+    resultVO.setAfterLargerArea($take.getAfterLargerArea());
+    resultVO.setAfterBigArea($take.getAfterBigArea());
+    resultVO.setAfterArea($take.getAfterArea());
+    resultVO.setChangeType($take.getChangeType());
+    resultVO.setManagerVOS(new ArrayList<>());
+    resultVO.setLockSets(new ArrayList<>());
+    insert(resultVO);
+    System.out.println("执行规则：judge1" + "---" + resultVO);
+end
+
+// 通过 judge1 触发此规则
+// 更新标识：任命记录中 是否存在 A任命人异动后 的上级B（B 也在这批任命记录中）
+rule "judge2-1"
+no-loop true
+salience 80
+when
+    // 任命异动类型为：大店区经晋升 或 业务经理晋升
+    $judge : RuleJudgeVO(changeType == "f1" || changeType == "g1")
+    RuleJudgeTakeAway(changeType == "d1" && afterLargerArea == $judge.afterLargerArea) from ruleList
+then
+    System.out.println("执行规则：judge2-1" + "---" + $judge.getAppointName() + "___有上级任命");
+    $judge.setHasSuperior("1");
+    update($judge)
+    //modify(){
+    //    $judge.setHasSuperior("1");
+    //}
+end
+
+
+rule "judge2-2"
+no-loop true
+salience 80
+when
+    // 任命异动类型为：大店区经晋升 或 业务经理晋升
+    $judge : RuleJudgeVO(changeType == "f1" || changeType == "g1")
+    // 大区总监晋升
+    not (RuleJudgeTakeAway(changeType == "d1" && afterLargerArea == $judge.afterLargerArea) from ruleList)
+then
+    System.out.println("执行规则：judge2-2" + "---" + $judge.getAppointName() + "___无上级任命");
+    $judge.setHasSuperior("0");
+    update($judge)
+end
+
+

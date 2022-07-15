@@ -1,0 +1,100 @@
+package change;
+import cn.maitian.bss.modules.change.vo.RuleJudgeVO
+import cn.maitian.bss.modules.change.vo.RuleManagerVO
+import cn.maitian.bss.modules.change.model.RuleLockSet
+import cn.maitian.bss.modules.change.model.RuleLockRelation
+import cn.maitian.bss.modules.change.model.RuleTakeAwayOccupy
+import cn.maitian.bss.modules.change.model.RuleOccupy
+import java.util.ArrayList
+
+global cn.maitian.bss.modules.change.service.RuleLockRelationIService ruleLockRelationIService
+global cn.maitian.bss.modules.change.service.RuleLockSetIService ruleLockSetIService
+global cn.maitian.bss.modules.change.service.RuleOccupyIService ruleOccupyIService
+global cn.maitian.bss.modules.change.service.RuleTakeAwayOccupyIService ruleTakeAwayOccupyIService
+
+
+// 每个任命人过来，查询他的所有上级对应的 异动锁定集合（有效的）
+//
+rule "judge4-1"
+salience 69
+when
+    $r : RuleJudgeVO()
+//    $managers : ArrayList() from $r.managerVOS  // 不好使
+    $managers : ArrayList(size > 0) from collect (RuleManagerVO() from $r.managerVOS)
+    // 一个上级，可能有多条异动锁定集合
+    // 调用service，查询异动锁定集合，当前日期在有效期内
+//    $lockSet : ArrayList(size > 0) from ruleLockSetIService.queryRuleLockSetList($managers)  // 这个为false
+    $lockSet : ArrayList(size > 0) from collect(RuleLockSet() from ruleLockSetIService.queryRuleLockSetList($managers))
+    // 查询异动锁定关系中，下属为当前任命人的记录
+    $lockRelation : ArrayList() from collect(RuleLockRelation() from ruleLockRelationIService.queryRuleLockRelationList($r.appointOldId, $lockSet))
+//    from accumulate($rela : RuleLockRelation() from ruleLockRelationIService.queryRuleLockRelationList($r.appointOldId, $lockSet),
+//    init(),
+//    action(),
+//    result())
+//    $lockSet : ArrayList() from collect(RuleLockSet() from $lockSet)
+then
+    // 不知道咋写，逻辑放在这
+      ArrayList<RuleLockSet> result = new ArrayList();
+      for(int i=0; i<$lockSet.size(); i++){
+          RuleLockSet set = (RuleLockSet)$lockSet.get(i);
+          for(int j=0; j<$lockRelation.size(); j++){
+              RuleLockRelation rela = (RuleLockRelation)$lockRelation.get(j);
+              if(rela.getLockSetId().equals(set.getId())){
+                  result.add(set);
+              }
+          }
+      }
+      $r.setLockSets(result);
+      update($r);
+
+     System.out.println("执行规则：judge4-1：有效的锁定集合" + "---" + result);
+    // System.out.println("执行规则：judge4-1：有效的锁定集合" + "---" + $lockRelation);
+
+end
+
+// 查询
+rule "judge5-1"
+salience 59
+when
+    $r : RuleJudgeVO()
+    $ruleLockSets : ArrayList(size > 0) from collect (RuleLockSet() from $r.lockSets)
+    $occupys : ArrayList(size > 0) from collect(RuleOccupy() from ruleOccupyIService.queryOccupyList($ruleLockSets))
+
+    $takeOccupys : ArrayList(size > 0) from accumulate($occ : RuleOccupy() from $occupys,
+        init(ArrayList result = new ArrayList()),
+        action(
+            RuleTakeAwayOccupy vo = new RuleTakeAwayOccupy();
+            vo.setTakeAwayId($r.getTakeAwayId());
+            vo.setOccupyId($occ.getId());
+            result.add(vo);
+        ),
+        result(result))
+
+    $desc : String() from accumulate($rSet : RuleLockSet() from $r.lockSets,
+    init(String result = new String()),
+    action(
+        int count = 0;
+        for(int i=0; i<$occupys.size(); i++){
+            RuleOccupy vo = (RuleOccupy)$occupys.get(i);
+            if($rSet.getId().equals(vo.getLockSetId())){
+                count ++ ;
+            }
+        }
+        System.out.println("count:" + count + "  LimitNum:" + $rSet.getLimitNum());
+//        if(count > $rSet.getLimitNum()){
+            for(int i=0; i<$r.getManagerVOS().size(); i++){
+                 RuleManagerVO vo = (RuleManagerVO)$r.getManagerVOS().get(i);
+                if($rSet.getAppointOldId().toString().equals(vo.getManagerOldId().toString())){
+                    result = result +  vo.getDeptName() + "-" + vo.getManagerName();
+                }
+            }
+//        }
+    ),
+    result(result))
+then
+
+    ruleTakeAwayOccupyIService.saveRuleTakeAwayOccupyList($takeOccupys);
+    // System.out.println("执行规则：judge5-1：有效占用记录" + "---" + $occupyList);
+    System.out.println("执行规则：judge5-1：上级信息" + "---" + $desc);
+     // System.out.println("执行规则：judge5-1：有效占用记录" + "---" + $occupys);
+end

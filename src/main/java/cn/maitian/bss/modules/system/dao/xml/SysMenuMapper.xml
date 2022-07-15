@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.maitian.bss.modules.system.dao.SysMenuMapper">
+
+    <select id="getMenuListByRoleIdList" resultType="cn.maitian.bss.modules.system.model.SysMenu">
+        SELECT DISTINCT b.*
+        FROM SYS_ROLE_MENU a
+        LEFT JOIN SYS_MENU b ON a.menu_id = b.id
+        WHERE a.role_id IN
+        <foreach collection="roleIdList" item="roleId" open="(" close=")" separator=",">
+            #{roleId}
+        </foreach>
+        AND b.is_show = '1'
+        ORDER BY b.seq ASC
+    </select>
+
+    <select id="getAllMenuListByRoleIdList" resultType="cn.maitian.bss.modules.system.model.SysMenu">
+        SELECT DISTINCT b.*
+        FROM SYS_ROLE_MENU a
+        LEFT JOIN SYS_MENU b ON a.menu_id = b.id
+        WHERE a.role_id IN
+        <foreach collection="roleIdList" item="roleId" open="(" close=")" separator=",">
+            #{roleId}
+        </foreach>
+        -- AND b.is_show = '1'
+        ORDER BY b.seq ASC
+    </select>
+</mapper>

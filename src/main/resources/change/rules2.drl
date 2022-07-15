@@ -1,0 +1,148 @@
+//package change;
+//import cn.maitian.bss.modules.change.model.RuleJudgeTakeAway
+//import cn.maitian.bss.modules.change.vo.RuleJudgeVO
+//import java.util.ArrayList
+//
+//global java.util.ArrayList ruleList
+//
+//// 向中间对象set必要信息
+//rule "judge1"
+//no-loop true
+//salience 90
+//when
+//    // 没有任命记录，暂时使用 可带人员限量判定结果 子表
+//    // 任命异动类型为：大店区经晋升 或 业务经理晋升
+//    //$take : RuleJudgeTakeAway(changeType == "f1" || changeType == "g1")
+//    $take : RuleJudgeTakeAway()
+//then
+//    RuleJudgeVO resultVO = new RuleJudgeVO();
+//    resultVO.setTakeAwayId($take.getId());
+//    resultVO.setAppointName($take.getAppointName());
+//    resultVO.setAppointOldId($take.getAppointOldId());
+//    resultVO.setIdCard($take.getIdCard());
+//    resultVO.setAfterLargerArea($take.getAfterLargerArea());
+//    resultVO.setAfterBigArea($take.getAfterBigArea());
+//    resultVO.setAfterArea($take.getAfterArea());
+//    resultVO.setChangeType($take.getChangeType());
+//    resultVO.setManagerVOS(new ArrayList<>());
+//    resultVO.setLockSets(new ArrayList<>());
+//    insert(resultVO);
+//    System.out.println("执行规则：judge1" + "---" + resultVO);
+//end
+//
+//rule "judge2-1"
+//no-loop true
+//salience 80
+//when
+//    // 任命异动类型为：d1.大区总监晋升
+//    $judge : RuleJudgeVO(changeType == "d1")
+//    // 查看本次任命中是否有下级任命（异动后的下级）
+//    RuleJudgeTakeAway(changeType in ("e1", "f1", "g1", "h1", "o1", "p1", "l1", "m1", "n1", "q1") && afterLargerArea == $judge.afterLargerArea) from ruleList
+//then
+//    $judge.setHasSup("1");
+//    update($judge)
+//end
+//
+//rule "judge2-1-2"
+//no-loop true
+//salience 80
+//when
+//    // 任命异动类型为：d1.大区总监晋升
+//    $judge : RuleJudgeVO(changeType == "d1")
+//    not RuleJudgeTakeAway(changeType in ("e1", "f1", "g1", "h1", "o1", "p1", "l1", "m1", "n1", "q1") && afterLargerArea == $judge.afterLargerArea) from ruleList
+//then
+//    $judge.setHasSup("0");
+//    update($judge)
+//end
+//
+//
+//
+//rule "judge2-2"
+//no-loop true
+//salience 80
+//when
+//    // 任命异动类型为：e1.大区总监异动，f1.大店区经晋升
+//    $judge : RuleJudgeVO(changeType in ("e1", "f1"))
+//    RuleJudgeTakeAway(changeType in ("g1", "h1", "o1", "p1", "l1", "m1", "n1", "q1") && afterLargerArea == $judge.afterBigArea) from ruleList
+//then
+//    $judge.setHasSup("1");
+//    update($judge)
+//end
+//
+//rule "judge2-2-2"
+//no-loop true
+//salience 80
+//when
+//    // 任命异动类型为：e1.大区总监异动，f1.大店区经晋升
+//    $judge : RuleJudgeVO(changeType in ("e1", "f1"))
+//    not RuleJudgeTakeAway(changeType in ("g1", "h1", "o1", "p1", "l1", "m1", "n1", "q1") && afterLargerArea == $judge.afterBigArea) from ruleList
+//then
+//    $judge.setHasSup("0");
+//    update($judge)
+//end
+//
+//
+//
+//rule "judge2-3"
+//no-loop true
+//salience 80
+//when
+//    // g1.业务经理晋升，h1.大店区经异动，o1.大区总监降职
+//    $judge : RuleJudgeVO(changeType in ("g1", "h1", "o1"))
+//    RuleJudgeTakeAway(changeType in ("p1", "l1", "m1", "n1", "q1") && afterLargerArea == $judge.afterBigArea) from ruleList
+//then
+//    $judge.setHasSup("1");
+//    update($judge)
+//end
+//
+//rule "judge2-3-2"
+//no-loop true
+//salience 80
+//when
+//    // g1.业务经理晋升，h1.大店区经异动，o1.大区总监降职
+//    $judge : RuleJudgeVO(changeType in ("g1", "h1", "o1"))
+//    not RuleJudgeTakeAway(changeType in ("p1", "l1", "m1", "n1", "q1") && afterLargerArea == $judge.afterBigArea) from ruleList
+//then
+//    $judge.setHasSup("0");
+//    update($judge)
+//end
+//
+//
+//
+//rule "judge2-4"
+//no-loop true
+//salience 80
+//when
+//    // p1.大店区经降职，l1.业务经理异动，m1.新科业务经理，n1.见习业务经理转正
+//    $judge : RuleJudgeVO(changeType in ("p1", "l1", "m1", "n1"))
+//    RuleJudgeTakeAway(changeType in ("q1") && afterLargerArea == $judge.afterBigArea) from ruleList
+//then
+//    $judge.setHasSup("1");
+//    update($judge)
+//end
+//
+//rule "judge2-4-2"
+//no-loop true
+//salience 80
+//when
+//    // p1.大店区经降职，l1.业务经理异动，m1.新科业务经理，n1.见习业务经理转正
+//    $judge : RuleJudgeVO(changeType in ("p1", "l1", "m1", "n1"))
+//    not RuleJudgeTakeAway(changeType in ("q1") && afterLargerArea == $judge.afterBigArea) from ruleList
+//then
+//    $judge.setHasSup("0");
+//    update($judge)
+//end
+//
+//
+//
+////rule "judge2-5"
+////no-loop true
+////salience 80
+////when
+////    // q1.业务经理降职
+////    $judge : RuleJudgeVO(changeType in ("q1"))
+////    RuleJudgeTakeAway(changeType in ("q1") && afterLargerArea == $judge.afterBigArea) from ruleList
+////then
+////    $judge.setHasSup("1");
+////end
+//

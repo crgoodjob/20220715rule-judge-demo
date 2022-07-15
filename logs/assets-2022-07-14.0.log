@@ -1,0 +1,898 @@
+2022-07-14 09:27:42.192  INFO 26256 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 26256 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:27:42.205  INFO 26256 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:27:45.934  INFO 26256 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:27:45.941  INFO 26256 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$12289b6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:27:46.133  INFO 26256 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:27:46.840  INFO 26256 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:27:46.861  INFO 26256 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:27:46.862  INFO 26256 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:27:46.863  INFO 26256 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:27:47.303  INFO 26256 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:27:47.304  INFO 26256 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4513 ms
+2022-07-14 09:27:50.029  INFO 26256 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:27:50.031  INFO 26256 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:27:50.034  INFO 26256 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:27:54.304  INFO 26256 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:27:54.907  INFO 26256 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:27:55.328  WARN 26256 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:28:01.266  INFO 26256 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:28:01.269  INFO 26256 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:28:01.280  INFO 26256 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:28:01.303  INFO 26256 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:28:04.390 ERROR 26256 --- [           main] o.d.c.kie.builder.impl.KieProject        : Unable to build KieBaseModel:change
+Rule Compilation error : [Rule name='judge5-1']
+	org.drools.compiler.kie.builder.impl.CompilationProblemAdapter@6f5690f3
+	org.drools.compiler.kie.builder.impl.CompilationProblemAdapter@160a8986
+
+
+2022-07-14 09:28:04.393  WARN 26256 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [cn/maitian/bss/modules/config/KieConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=51, column=0
+   text=Rule Compilation error RuleOccupy cannot be resolved to a type
+RuleOccupy cannot be resolved to a type]]
+2022-07-14 09:28:04.401  INFO 26256 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2022-07-14 09:28:04.419  INFO 26256 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-14 09:28:04.431  INFO 26256 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-14 09:28:04.431  INFO 26256 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2022-07-14 09:28:04.436  INFO 26256 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-14 09:28:04.442  WARN 26256 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-14 09:28:04.443  WARN 26256 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
+2022-07-14 09:28:04.443  WARN 26256 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-14 09:28:04.444  WARN 26256 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [OracleTimeoutPollingThread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ oracle.jdbc.driver.OracleTimeoutPollingThread.run(OracleTimeoutPollingThread.java:152)
+2022-07-14 09:28:04.480  INFO 26256 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-14 09:28:04.645 ERROR 26256 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'kieContainer' defined in class path resource [cn/maitian/bss/modules/config/KieConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=51, column=0
+   text=Rule Compilation error RuleOccupy cannot be resolved to a type
+RuleOccupy cannot be resolved to a type]]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:658)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at cn.maitian.bss.modules.AssetsApplication.main(AssetsApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.kie.api.runtime.KieContainer]: Factory method 'kieContainer' threw exception; nested exception is java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=51, column=0
+   text=Rule Compilation error RuleOccupy cannot be resolved to a type
+RuleOccupy cannot be resolved to a type]]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
+	... 19 common frames omitted
+Caused by: java.lang.RuntimeException: Error while creating KieBase[Message [id=1, kieBase=change, level=ERROR, path=D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes\change\lockSet.drl, line=51, column=0
+   text=Rule Compilation error RuleOccupy cannot be resolved to a type
+RuleOccupy cannot be resolved to a type]]
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBase(KieContainerImpl.java:442)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.getKieBaseFromKieSessionModel(KieContainerImpl.java:620)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:596)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:519)
+	at org.drools.compiler.kie.builder.impl.KieContainerImpl.newKieSession(KieContainerImpl.java:502)
+	at cn.maitian.bss.modules.change.utils.DroolsUtils.setKieContainer(DroolsUtils.java:22)
+	at cn.maitian.bss.modules.config.KieConfig.kieContainer(KieConfig.java:31)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$d2845209.CGLIB$kieContainer$0(<generated>)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$d2845209$$FastClassBySpringCGLIB$$aff20cdf.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at cn.maitian.bss.modules.config.KieConfig$$EnhancerBySpringCGLIB$$d2845209.kieContainer(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 20 common frames omitted
+
+2022-07-14 09:30:02.022  INFO 12928 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 12928 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:30:02.028  INFO 12928 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:30:07.255  INFO 12928 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:30:07.261  INFO 12928 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$ec4691f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:30:07.441  INFO 12928 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:30:08.116  INFO 12928 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:30:08.133  INFO 12928 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:30:08.135  INFO 12928 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:30:08.137  INFO 12928 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:30:08.550  INFO 12928 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:30:08.550  INFO 12928 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5742 ms
+2022-07-14 09:30:11.498  INFO 12928 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:30:11.501  INFO 12928 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:30:11.504  INFO 12928 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:30:18.193  INFO 12928 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:30:18.810  INFO 12928 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:30:19.444  WARN 12928 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:30:25.129  INFO 12928 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:30:25.131  INFO 12928 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:30:25.144  INFO 12928 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:30:25.159  INFO 12928 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:30:28.028  INFO 12928 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:30:28.632  INFO 12928 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:30:29.565  INFO 12928 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:30:29.596  INFO 12928 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:30:30.133  WARN 12928 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:30:30.176  INFO 12928 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 30.32 seconds (JVM running for 33.902)
+2022-07-14 09:30:30.411  INFO 12928 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:30:30.411  INFO 12928 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:30:30.417  INFO 12928 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-14 09:35:44.693  INFO 35020 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 35020 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:35:44.703  INFO 35020 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:35:48.606  INFO 35020 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:35:48.612  INFO 35020 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$ddd8342] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:35:48.831  INFO 35020 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:35:49.532  INFO 35020 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:35:49.549  INFO 35020 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:35:49.550  INFO 35020 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:35:49.551  INFO 35020 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:35:49.930  INFO 35020 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:35:49.930  INFO 35020 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4563 ms
+2022-07-14 09:35:52.732  INFO 35020 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:35:52.734  INFO 35020 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:35:52.736  INFO 35020 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:35:57.006  INFO 35020 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:35:57.582  INFO 35020 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:35:57.998  WARN 35020 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:36:03.742  INFO 35020 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:36:03.744  INFO 35020 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:36:03.754  INFO 35020 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:36:03.770  INFO 35020 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:36:06.561  INFO 35020 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:36:07.187  INFO 35020 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:36:08.084  INFO 35020 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:36:08.121  INFO 35020 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:36:08.542  WARN 35020 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:36:08.584  INFO 35020 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 25.397 seconds (JVM running for 28.791)
+2022-07-14 09:36:10.157  INFO 35020 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:36:10.158  INFO 35020 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:36:10.162  INFO 35020 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-14 09:44:26.982  INFO 32980 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 32980 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:44:26.988  INFO 32980 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:44:31.268  INFO 32980 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:44:31.274  INFO 32980 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$b43a5a69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:44:31.520  INFO 32980 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:44:32.804  INFO 32980 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:44:32.834  INFO 32980 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:44:32.836  INFO 32980 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:44:32.837  INFO 32980 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:44:33.400  INFO 32980 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:44:33.401  INFO 32980 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5846 ms
+2022-07-14 09:44:37.540  INFO 32980 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:44:37.541  INFO 32980 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:44:37.545  INFO 32980 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:44:42.837  INFO 32980 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:44:43.504  INFO 32980 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:44:44.135  WARN 32980 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:44:53.406  INFO 32980 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:44:53.410  INFO 32980 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:44:53.419  INFO 32980 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:44:53.438  INFO 32980 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:44:56.582  INFO 32980 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:44:57.289  INFO 32980 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:44:58.369  INFO 32980 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:44:58.406  INFO 32980 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:44:58.917  WARN 32980 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:44:58.978  INFO 32980 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 34.041 seconds (JVM running for 38.104)
+2022-07-14 09:45:00.079  INFO 32980 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:45:00.079  INFO 32980 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:45:00.085  INFO 32980 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-14 09:46:28.972  INFO 25632 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 25632 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:46:28.978  INFO 25632 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:46:32.807  INFO 25632 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:46:32.816  INFO 25632 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$1b8243d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:46:33.019  INFO 25632 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:46:33.768  INFO 25632 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:46:33.787  INFO 25632 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:46:33.789  INFO 25632 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:46:33.789  INFO 25632 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:46:34.210  INFO 25632 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:46:34.210  INFO 25632 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4675 ms
+2022-07-14 09:46:36.910  INFO 25632 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:46:36.912  INFO 25632 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:46:36.914  INFO 25632 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:46:41.188  INFO 25632 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:46:41.819  INFO 25632 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:46:42.243  WARN 25632 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:46:48.205  INFO 25632 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:46:48.207  INFO 25632 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:46:48.218  INFO 25632 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:46:48.234  INFO 25632 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:46:50.726  INFO 25632 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:46:51.376  INFO 25632 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:46:52.310  INFO 25632 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:46:52.349  INFO 25632 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:46:52.790  WARN 25632 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:46:52.830  INFO 25632 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 25.313 seconds (JVM running for 29.285)
+2022-07-14 09:46:54.675  INFO 25632 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:46:54.676  INFO 25632 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:46:54.681  INFO 25632 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 09:49:49.916  INFO 32560 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 32560 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:49:49.923  INFO 32560 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:49:54.385  INFO 32560 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:49:54.392  INFO 32560 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$3c193114] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:49:54.618  INFO 32560 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:49:55.640  INFO 32560 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:49:55.661  INFO 32560 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:49:55.662  INFO 32560 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:49:55.662  INFO 32560 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:49:56.339  INFO 32560 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:49:56.340  INFO 32560 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5846 ms
+2022-07-14 09:49:59.310  INFO 32560 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:49:59.313  INFO 32560 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:49:59.317  INFO 32560 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:50:04.211  INFO 32560 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:50:04.983  INFO 32560 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:50:05.428  WARN 32560 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:50:12.075  INFO 32560 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:50:12.077  INFO 32560 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:50:12.086  INFO 32560 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:50:12.104  INFO 32560 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:50:15.276  INFO 32560 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:50:16.356  INFO 32560 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:50:17.358  INFO 32560 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:50:17.391  INFO 32560 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:50:17.834  WARN 32560 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:50:17.873  INFO 32560 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 29.34 seconds (JVM running for 34.33)
+2022-07-14 09:50:18.362  INFO 32560 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:50:18.362  INFO 32560 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:50:18.365  INFO 32560 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-14 09:51:42.768  INFO 33944 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 33944 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:51:42.774  INFO 33944 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:51:46.813  INFO 33944 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:51:46.822  INFO 33944 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$2b89b842] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:51:47.072  INFO 33944 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:51:47.803  INFO 33944 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:51:47.822  INFO 33944 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:51:47.824  INFO 33944 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:51:47.824  INFO 33944 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:51:48.216  INFO 33944 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:51:48.217  INFO 33944 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4831 ms
+2022-07-14 09:51:51.431  INFO 33944 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:51:51.434  INFO 33944 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:51:51.436  INFO 33944 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:51:55.737  INFO 33944 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:51:56.353  INFO 33944 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:51:56.799  WARN 33944 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:52:03.260  INFO 33944 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:52:03.263  INFO 33944 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:52:03.274  INFO 33944 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:52:03.292  INFO 33944 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:52:05.941  INFO 33944 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:52:06.837  INFO 33944 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:52:07.848  INFO 33944 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:52:07.882  INFO 33944 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:52:08.336  WARN 33944 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:52:08.373  INFO 33944 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 27.207 seconds (JVM running for 31.896)
+2022-07-14 09:52:09.014  INFO 33944 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:52:09.015  INFO 33944 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:52:09.024  INFO 33944 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-07-14 09:53:09.363  INFO 3212 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 3212 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:53:09.370  INFO 3212 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:53:13.208  INFO 3212 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:53:13.214  INFO 3212 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$c577ecc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:53:13.413  INFO 3212 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:53:14.145  INFO 3212 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:53:14.163  INFO 3212 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:53:14.164  INFO 3212 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:53:14.165  INFO 3212 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:53:14.556  INFO 3212 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:53:14.556  INFO 3212 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4603 ms
+2022-07-14 09:53:17.582  INFO 3212 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:53:17.584  INFO 3212 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:53:17.586  INFO 3212 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:53:21.897  INFO 3212 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:53:22.524  INFO 3212 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:53:22.962  WARN 3212 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:53:29.374  INFO 3212 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:53:29.377  INFO 3212 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:53:29.386  INFO 3212 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:53:29.401  INFO 3212 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:53:31.877  INFO 3212 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:53:32.548  INFO 3212 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:53:33.513  INFO 3212 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:53:33.552  INFO 3212 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:53:33.995  WARN 3212 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:53:34.049  INFO 3212 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 26.022 seconds (JVM running for 29.831)
+2022-07-14 09:53:34.717  INFO 3212 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:53:34.718  INFO 3212 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:53:34.724  INFO 3212 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-14 09:54:08.438  INFO 14736 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 14736 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:54:08.447  INFO 14736 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:54:12.521  INFO 14736 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:54:12.527  INFO 14736 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$84bc96f0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:54:12.724  INFO 14736 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:54:13.443  INFO 14736 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:54:13.460  INFO 14736 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:54:13.462  INFO 14736 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:54:13.462  INFO 14736 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:54:13.862  INFO 14736 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:54:13.863  INFO 14736 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4668 ms
+2022-07-14 09:54:16.987  INFO 14736 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:54:16.990  INFO 14736 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:54:16.993  INFO 14736 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:54:21.888  INFO 14736 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:54:22.487  INFO 14736 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:54:22.946  WARN 14736 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:54:30.694  INFO 14736 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:54:30.697  INFO 14736 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:54:30.710  INFO 14736 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:54:30.731  INFO 14736 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:54:33.791  INFO 14736 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:54:34.577  INFO 14736 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:54:35.951  INFO 14736 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:54:36.001  INFO 14736 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:54:36.623  WARN 14736 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:54:36.674  INFO 14736 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 30.465 seconds (JVM running for 34.233)
+2022-07-14 09:54:38.159  INFO 14736 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:54:38.159  INFO 14736 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:54:38.164  INFO 14736 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 09:57:25.751  INFO 29440 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 29440 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 09:57:25.758  INFO 29440 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 09:57:30.619  INFO 29440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:57:30.626  INFO 29440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$a5c417f8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:57:30.833  INFO 29440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 09:57:31.571  INFO 29440 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 09:57:31.590  INFO 29440 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:57:31.591  INFO 29440 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 09:57:31.592  INFO 29440 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 09:57:31.989  INFO 29440 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 09:57:31.991  INFO 29440 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5354 ms
+2022-07-14 09:57:35.133  INFO 29440 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 09:57:35.135  INFO 29440 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 09:57:35.138  INFO 29440 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 09:57:39.921  INFO 29440 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 09:57:40.556  INFO 29440 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 09:57:41.005  WARN 29440 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 09:57:47.169  INFO 29440 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 09:57:47.172  INFO 29440 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 09:57:47.183  INFO 29440 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 09:57:47.198  INFO 29440 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 09:57:49.714  INFO 29440 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 09:57:50.562  INFO 29440 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 09:57:51.951  INFO 29440 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 09:57:51.998  INFO 29440 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 09:57:52.650  WARN 29440 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 09:57:52.689  INFO 29440 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 28.868 seconds (JVM running for 33.531)
+2022-07-14 09:57:54.581  INFO 29440 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 09:57:54.582  INFO 29440 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 09:57:54.588  INFO 29440 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-14 10:02:31.601  INFO 24676 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 24676 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 10:02:31.610  INFO 24676 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 10:02:36.373  INFO 24676 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:02:36.382  INFO 24676 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$30492c3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:02:36.579  INFO 24676 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:02:37.404  INFO 24676 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 10:02:37.427  INFO 24676 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:02:37.428  INFO 24676 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 10:02:37.429  INFO 24676 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 10:02:37.989  INFO 24676 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 10:02:37.990  INFO 24676 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5696 ms
+2022-07-14 10:02:41.226  INFO 24676 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 10:02:41.228  INFO 24676 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 10:02:41.231  INFO 24676 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 10:02:45.811  INFO 24676 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 10:02:46.413  INFO 24676 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 10:02:46.883  WARN 24676 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 10:02:53.436  INFO 24676 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 10:02:53.439  INFO 24676 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 10:02:53.450  INFO 24676 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 10:02:53.466  INFO 24676 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 10:02:55.996  INFO 24676 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 10:02:56.632  INFO 24676 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 10:02:57.566  INFO 24676 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:02:57.608  INFO 24676 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 10:02:58.076  WARN 24676 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 10:02:58.129  INFO 24676 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 27.875 seconds (JVM running for 34.718)
+2022-07-14 10:02:58.840  INFO 24676 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 10:02:58.841  INFO 24676 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 10:02:58.847  INFO 24676 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-14 10:06:38.301  INFO 31512 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 31512 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 10:06:38.309  INFO 31512 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 10:06:42.731  INFO 31512 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:06:42.738  INFO 31512 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$72dceb74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:06:42.958  INFO 31512 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:06:43.730  INFO 31512 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 10:06:43.750  INFO 31512 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:06:43.753  INFO 31512 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 10:06:43.755  INFO 31512 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 10:06:44.184  INFO 31512 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 10:06:44.185  INFO 31512 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5255 ms
+2022-07-14 10:06:47.341  INFO 31512 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 10:06:47.343  INFO 31512 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 10:06:47.345  INFO 31512 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 10:06:51.619  INFO 31512 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 10:06:52.235  INFO 31512 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 10:06:52.738  WARN 31512 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 10:06:59.653  INFO 31512 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 10:06:59.656  INFO 31512 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 10:06:59.670  INFO 31512 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 10:06:59.686  INFO 31512 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 10:07:02.398  INFO 31512 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 10:07:03.025  INFO 31512 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 10:07:03.934  INFO 31512 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:07:03.970  INFO 31512 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 10:07:04.426  WARN 31512 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 10:07:04.466  INFO 31512 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 28.027 seconds (JVM running for 31.736)
+2022-07-14 10:07:06.354  INFO 31512 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 10:07:06.355  INFO 31512 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 10:07:06.361  INFO 31512 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-14 10:07:57.951  INFO 35472 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 35472 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 10:07:57.957  INFO 35472 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 10:08:01.795  INFO 35472 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:08:01.803  INFO 35472 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$fd6f2764] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:08:02.023  INFO 35472 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:08:02.872  INFO 35472 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 10:08:02.891  INFO 35472 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:08:02.892  INFO 35472 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 10:08:02.893  INFO 35472 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 10:08:03.321  INFO 35472 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 10:08:03.322  INFO 35472 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4797 ms
+2022-07-14 10:08:06.159  INFO 35472 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 10:08:06.162  INFO 35472 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 10:08:06.165  INFO 35472 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 10:08:10.568  INFO 35472 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 10:08:11.214  INFO 35472 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 10:08:11.649  WARN 35472 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 10:08:17.574  INFO 35472 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 10:08:17.576  INFO 35472 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 10:08:17.590  INFO 35472 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 10:08:17.606  INFO 35472 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 10:08:20.193  INFO 35472 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 10:08:20.989  INFO 35472 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 10:08:22.071  INFO 35472 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:08:22.105  INFO 35472 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 10:08:22.560  WARN 35472 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 10:08:22.601  INFO 35472 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 26.048 seconds (JVM running for 30.051)
+2022-07-14 10:08:23.591  INFO 35472 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 10:08:23.592  INFO 35472 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 10:08:23.599  INFO 35472 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-07-14 10:10:42.166  INFO 34604 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 34604 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 10:10:42.176  INFO 34604 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 10:10:46.277  INFO 34604 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:10:46.283  INFO 34604 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$e42d9b60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:10:46.488  INFO 34604 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:10:47.235  INFO 34604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 10:10:47.253  INFO 34604 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:10:47.255  INFO 34604 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 10:10:47.256  INFO 34604 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 10:10:47.687  INFO 34604 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 10:10:47.687  INFO 34604 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4891 ms
+2022-07-14 10:10:50.942  INFO 34604 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 10:10:50.947  INFO 34604 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 10:10:50.951  INFO 34604 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 10:10:55.449  INFO 34604 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 10:10:56.091  INFO 34604 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 10:10:56.548  WARN 34604 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 10:11:03.025  INFO 34604 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 10:11:03.027  INFO 34604 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 10:11:03.038  INFO 34604 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 10:11:03.054  INFO 34604 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 10:11:05.738  INFO 34604 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 10:11:06.417  INFO 34604 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 10:11:07.395  INFO 34604 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:11:07.431  INFO 34604 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 10:11:07.957  WARN 34604 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 10:11:07.996  INFO 34604 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 27.72 seconds (JVM running for 32.234)
+2022-07-14 10:11:09.872  INFO 34604 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 10:11:09.873  INFO 34604 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 10:11:09.877  INFO 34604 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-07-14 10:11:43.980 ERROR 34604 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:11:54.779 ERROR 34604 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:11:59.379 ERROR 34604 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:12:23.543 ERROR 34604 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:12:23.561 ERROR 34604 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:12:23.578 ERROR 34604 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:14:50.379 ERROR 34604 --- [nio-9090-exec-4] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:14:52.694 ERROR 34604 --- [nio-9090-exec-4] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:14:52.715 ERROR 34604 --- [nio-9090-exec-4] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:18:41.866  INFO 31516 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 31516 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 10:18:41.872  INFO 31516 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 10:18:45.787  INFO 31516 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:18:45.794  INFO 31516 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$9e9b3a1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:18:46.024  INFO 31516 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:18:46.779  INFO 31516 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 10:18:46.799  INFO 31516 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:18:46.800  INFO 31516 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 10:18:46.801  INFO 31516 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 10:18:47.200  INFO 31516 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 10:18:47.202  INFO 31516 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4752 ms
+2022-07-14 10:18:49.957  INFO 31516 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 10:18:49.959  INFO 31516 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 10:18:49.961  INFO 31516 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 10:18:54.499  INFO 31516 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 10:18:55.270  INFO 31516 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 10:18:55.855  WARN 31516 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 10:19:04.006  INFO 31516 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 10:19:04.012  INFO 31516 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 10:19:04.026  INFO 31516 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 10:19:04.052  INFO 31516 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 10:19:06.716  INFO 31516 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 10:19:07.375  INFO 31516 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 10:19:08.333  INFO 31516 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:19:08.366  INFO 31516 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 10:19:08.812  WARN 31516 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 10:19:08.858  INFO 31516 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 28.328 seconds (JVM running for 32.207)
+2022-07-14 10:19:09.597  INFO 31516 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 10:19:09.598  INFO 31516 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 10:19:09.605  INFO 31516 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-07-14 10:19:35.324 ERROR 31516 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 10:19:35.351 ERROR 31516 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 10:19:35.374 ERROR 31516 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:22:39.535 ERROR 31516 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 10:23:39.696 ERROR 31516 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 10:25:41.715 ERROR 31516 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:26:57.949  INFO 8520 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 8520 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 10:26:57.957  INFO 8520 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 10:27:01.787  INFO 8520 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:27:01.793  INFO 8520 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$8da0ee4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:27:02.011  INFO 8520 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:27:02.751  INFO 8520 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 10:27:02.771  INFO 8520 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:27:02.773  INFO 8520 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 10:27:02.773  INFO 8520 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 10:27:03.178  INFO 8520 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 10:27:03.178  INFO 8520 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4648 ms
+2022-07-14 10:27:05.875  INFO 8520 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 10:27:05.880  INFO 8520 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 10:27:05.885  INFO 8520 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 10:27:10.082  INFO 8520 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 10:27:10.714  INFO 8520 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 10:27:11.234  WARN 8520 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 10:27:17.138  INFO 8520 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 10:27:17.140  INFO 8520 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 10:27:17.152  INFO 8520 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 10:27:17.171  INFO 8520 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 10:27:19.715  INFO 8520 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 10:27:20.360  INFO 8520 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 10:27:21.320  INFO 8520 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:27:21.352  INFO 8520 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 10:27:21.813  WARN 8520 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 10:27:21.857  INFO 8520 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 25.459 seconds (JVM running for 29.262)
+2022-07-14 10:27:23.743  INFO 8520 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 10:27:23.743  INFO 8520 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 10:27:23.749  INFO 8520 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 10:27:40.206 ERROR 8520 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 10:27:48.952 ERROR 8520 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 10:27:53.587 ERROR 8520 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:29:24.252  INFO 25836 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 25836 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 10:29:24.261  INFO 25836 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 10:29:28.389  INFO 25836 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:29:28.397  INFO 25836 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$139eb590] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:29:28.611  INFO 25836 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 10:29:29.349  INFO 25836 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 10:29:29.369  INFO 25836 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:29:29.370  INFO 25836 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 10:29:29.371  INFO 25836 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 10:29:29.761  INFO 25836 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 10:29:29.761  INFO 25836 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4882 ms
+2022-07-14 10:29:32.592  INFO 25836 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 10:29:32.594  INFO 25836 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 10:29:32.597  INFO 25836 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 10:29:36.857  INFO 25836 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 10:29:37.467  INFO 25836 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 10:29:37.911  WARN 25836 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 10:29:43.778  INFO 25836 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 10:29:43.780  INFO 25836 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 10:29:43.791  INFO 25836 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 10:29:43.808  INFO 25836 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 10:29:46.356  INFO 25836 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 10:29:47.037  INFO 25836 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 10:29:47.967  INFO 25836 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 10:29:48.004  INFO 25836 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 10:29:48.441  WARN 25836 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 10:29:48.480  INFO 25836 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 25.561 seconds (JVM running for 29.293)
+2022-07-14 10:29:49.978  INFO 25836 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 10:29:49.978  INFO 25836 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 10:29:49.983  INFO 25836 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 10:30:06.442 ERROR 25836 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 10:30:09.849 ERROR 25836 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 10:30:16.646 ERROR 25836 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 10:46:25.689 ERROR 25836 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 10:46:25.708 ERROR 25836 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 10:46:25.726 ERROR 25836 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 14:47:06.465  INFO 5276 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 5276 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 14:47:06.473  INFO 5276 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 14:47:11.191  INFO 5276 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 14:47:11.198  INFO 5276 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$ae09b47b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 14:47:11.505  INFO 5276 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 14:47:12.608  INFO 5276 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 14:47:12.633  INFO 5276 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 14:47:12.635  INFO 5276 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 14:47:12.636  INFO 5276 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 14:47:13.239  INFO 5276 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 14:47:13.242  INFO 5276 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6069 ms
+2022-07-14 14:47:17.094  INFO 5276 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 14:47:17.099  INFO 5276 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 14:47:17.102  INFO 5276 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 14:47:24.053  INFO 5276 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 14:47:25.021  INFO 5276 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 14:47:25.985  WARN 5276 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 14:47:35.090  INFO 5276 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 14:47:35.101  INFO 5276 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 14:47:35.120  INFO 5276 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 14:47:35.141  INFO 5276 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 14:47:38.728  INFO 5276 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 14:47:39.728  INFO 5276 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 14:47:41.195  INFO 5276 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 14:47:41.270  INFO 5276 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 14:47:41.839  WARN 5276 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 14:47:41.892  INFO 5276 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 37.022 seconds (JVM running for 44.216)
+2022-07-14 14:47:46.479  INFO 5276 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 14:47:46.479  INFO 5276 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 14:47:46.487  INFO 5276 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-07-14 14:48:17.346 ERROR 5276 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 14:48:17.388 ERROR 5276 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 14:48:17.432 ERROR 5276 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:00:10.607  INFO 32884 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 32884 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 15:00:10.686  INFO 32884 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 15:00:16.543  INFO 32884 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:00:16.555  INFO 32884 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4685ef00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:00:16.857  INFO 32884 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:00:17.820  INFO 32884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 15:00:17.841  INFO 32884 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:00:17.845  INFO 32884 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 15:00:17.847  INFO 32884 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 15:00:18.489  INFO 32884 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 15:00:18.490  INFO 32884 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6541 ms
+2022-07-14 15:00:22.946  INFO 32884 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 15:00:22.948  INFO 32884 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 15:00:22.952  INFO 32884 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 15:00:31.154  INFO 32884 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 15:00:31.867  INFO 32884 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 15:00:32.451  WARN 32884 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 15:00:41.330  INFO 32884 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 15:00:41.333  INFO 32884 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 15:00:41.345  INFO 32884 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 15:00:41.366  INFO 32884 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 15:00:44.766  INFO 32884 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 15:00:45.731  INFO 32884 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 15:00:47.151  INFO 32884 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:00:47.221  INFO 32884 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 15:00:47.982  WARN 32884 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 15:00:48.029  INFO 32884 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 38.907 seconds (JVM running for 45.754)
+2022-07-14 15:00:49.444  INFO 32884 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 15:00:49.444  INFO 32884 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 15:00:49.450  INFO 32884 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 15:00:58.955 ERROR 32884 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:00:59.003 ERROR 32884 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:00:59.043 ERROR 32884 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:14:43.957 ERROR 32884 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:14:43.991 ERROR 32884 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:14:44.016 ERROR 32884 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:26:44.264  INFO 6572 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 6572 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 15:26:44.271  INFO 6572 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 15:26:48.802  INFO 6572 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:26:48.811  INFO 6572 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$cf4a2d1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:26:49.026  INFO 6572 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:26:49.957  INFO 6572 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 15:26:49.979  INFO 6572 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:26:49.983  INFO 6572 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 15:26:49.984  INFO 6572 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 15:26:50.575  INFO 6572 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 15:26:50.576  INFO 6572 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5567 ms
+2022-07-14 15:26:54.111  INFO 6572 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 15:26:54.114  INFO 6572 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 15:26:54.116  INFO 6572 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 15:27:00.190  INFO 6572 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 15:27:00.869  INFO 6572 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 15:27:01.354  WARN 6572 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 15:27:09.534  INFO 6572 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 15:27:09.536  INFO 6572 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 15:27:09.548  INFO 6572 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 15:27:09.566  INFO 6572 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 15:27:12.657  INFO 6572 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 15:27:13.372  INFO 6572 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 15:27:14.492  INFO 6572 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:27:14.541  INFO 6572 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 15:27:15.038  WARN 6572 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 15:27:15.084  INFO 6572 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 32.34 seconds (JVM running for 40.046)
+2022-07-14 15:27:16.281  INFO 6572 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 15:27:16.282  INFO 6572 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 15:27:16.287  INFO 6572 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 15:28:25.468 ERROR 6572 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:28:25.542 ERROR 6572 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:28:25.592 ERROR 6572 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:29:11.357 ERROR 6572 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:29:13.043 ERROR 6572 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:29:16.881 ERROR 6572 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:30:04.229  INFO 36520 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 36520 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 15:30:04.238  INFO 36520 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 15:30:08.763  INFO 36520 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:30:08.776  INFO 36520 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$a3363e34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:30:09.010  INFO 36520 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:30:10.042  INFO 36520 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 15:30:10.065  INFO 36520 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:30:10.068  INFO 36520 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 15:30:10.068  INFO 36520 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 15:30:10.760  INFO 36520 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 15:30:10.761  INFO 36520 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5836 ms
+2022-07-14 15:30:14.709  INFO 36520 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 15:30:14.711  INFO 36520 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 15:30:14.714  INFO 36520 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 15:30:19.945  INFO 36520 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 15:30:20.612  INFO 36520 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 15:30:21.122  WARN 36520 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 15:30:28.772  INFO 36520 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 15:30:28.775  INFO 36520 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 15:30:28.788  INFO 36520 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 15:30:28.807  INFO 36520 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 15:30:31.678  INFO 36520 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 15:30:32.484  INFO 36520 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 15:30:33.514  INFO 36520 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:30:33.553  INFO 36520 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 15:30:34.036  WARN 36520 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 15:30:34.084  INFO 36520 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 31.299 seconds (JVM running for 38.278)
+2022-07-14 15:30:35.021  INFO 36520 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 15:30:35.022  INFO 36520 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 15:30:35.028  INFO 36520 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 15:31:00.553 ERROR 36520 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:31:00.608 ERROR 36520 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:31:00.656 ERROR 36520 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:32:24.879 ERROR 36520 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:36:31.183 ERROR 36520 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:38:30.606 ERROR 36520 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:40:57.237 ERROR 36520 --- [nio-9090-exec-7] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:41:00.738 ERROR 36520 --- [nio-9090-exec-7] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:41:00.776 ERROR 36520 --- [nio-9090-exec-7] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 15:42:38.343  INFO 19288 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 19288 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 15:42:38.349  INFO 19288 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 15:42:43.305  INFO 19288 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:42:43.314  INFO 19288 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$1644f4b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:42:43.534  INFO 19288 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 15:42:44.358  INFO 19288 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 15:42:44.378  INFO 19288 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:42:44.379  INFO 19288 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 15:42:44.381  INFO 19288 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 15:42:44.897  INFO 19288 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 15:42:44.901  INFO 19288 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5801 ms
+2022-07-14 15:42:48.191  INFO 19288 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 15:42:48.193  INFO 19288 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 15:42:48.195  INFO 19288 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 15:42:53.363  INFO 19288 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 15:42:54.011  INFO 19288 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 15:42:54.508  WARN 19288 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 15:43:02.467  INFO 19288 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 15:43:02.474  INFO 19288 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 15:43:02.486  INFO 19288 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 15:43:02.504  INFO 19288 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 15:43:05.460  INFO 19288 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 15:43:06.197  INFO 19288 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 15:43:07.239  INFO 19288 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 15:43:07.286  INFO 19288 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 15:43:07.791  WARN 19288 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 15:43:07.836  INFO 19288 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 31.035 seconds (JVM running for 36.047)
+2022-07-14 15:43:09.988  INFO 19288 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 15:43:09.989  INFO 19288 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 15:43:09.996  INFO 19288 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-07-14 15:45:41.360 ERROR 19288 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 15:45:41.421 ERROR 19288 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 15:45:41.472 ERROR 19288 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 16:12:21.503  INFO 36264 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 36264 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 16:12:21.510  INFO 36264 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 16:12:25.874  INFO 36264 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 16:12:25.883  INFO 36264 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$2195feca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 16:12:26.093  INFO 36264 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 16:12:26.956  INFO 36264 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 16:12:26.979  INFO 36264 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 16:12:26.980  INFO 36264 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 16:12:26.980  INFO 36264 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 16:12:27.495  INFO 36264 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 16:12:27.495  INFO 36264 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5373 ms
+2022-07-14 16:12:31.183  INFO 36264 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 16:12:31.185  INFO 36264 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 16:12:31.187  INFO 36264 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 16:12:37.653  INFO 36264 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 16:12:38.437  INFO 36264 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 16:12:38.906  WARN 36264 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 16:12:47.516  INFO 36264 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 16:12:47.518  INFO 36264 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 16:12:47.539  INFO 36264 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 16:12:47.564  INFO 36264 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 16:12:50.852  INFO 36264 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 16:12:51.537  INFO 36264 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 16:12:52.548  INFO 36264 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 16:12:52.585  INFO 36264 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 16:12:53.056  WARN 36264 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 16:12:53.100  INFO 36264 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 33.012 seconds (JVM running for 38.445)
+2022-07-14 16:12:53.677  INFO 36264 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 16:12:53.677  INFO 36264 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 16:12:53.683  INFO 36264 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-07-14 16:23:16.864 ERROR 36264 --- [nio-9090-exec-6] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 16:23:16.922 ERROR 36264 --- [nio-9090-exec-6] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 16:23:16.968 ERROR 36264 --- [nio-9090-exec-6] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 16:59:46.926 ERROR 36264 --- [nio-9090-exec-9] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 16:59:46.967 ERROR 36264 --- [nio-9090-exec-9] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 16:59:46.999 ERROR 36264 --- [nio-9090-exec-9] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 17:13:56.904  INFO 26380 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 26380 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 17:13:56.915  INFO 26380 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 17:14:01.600  INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 17:14:01.610  INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$edf8083c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 17:14:01.840  INFO 26380 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 17:14:02.948  INFO 26380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 17:14:03.003  INFO 26380 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 17:14:03.006  INFO 26380 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 17:14:03.007  INFO 26380 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 17:14:03.594  INFO 26380 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 17:14:03.594  INFO 26380 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6002 ms
+2022-07-14 17:14:07.576  INFO 26380 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 17:14:07.579  INFO 26380 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 17:14:07.582  INFO 26380 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 17:14:14.340  INFO 26380 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 17:14:15.697  INFO 26380 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 17:14:16.545  WARN 26380 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 17:14:26.862  INFO 26380 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 17:14:26.864  INFO 26380 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 17:14:26.879  INFO 26380 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 17:14:26.896  INFO 26380 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 17:14:30.014  INFO 26380 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 17:14:30.830  INFO 26380 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 17:14:32.279  INFO 26380 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 17:14:32.335  INFO 26380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 17:14:33.011  WARN 26380 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 17:14:33.063  INFO 26380 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 37.627 seconds (JVM running for 43.177)
+2022-07-14 17:14:34.195  INFO 26380 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 17:14:34.196  INFO 26380 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 17:14:34.203  INFO 26380 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-07-14 17:14:41.918 ERROR 26380 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 17:14:41.959 ERROR 26380 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 17:14:41.997 ERROR 26380 --- [nio-9090-exec-2] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 17:29:36.982 ERROR 26380 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 17:33:49.398 ERROR 26380 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 17:38:47.406 ERROR 26380 --- [nio-9090-exec-5] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 18:10:13.845 ERROR 26380 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 18:10:20.835 ERROR 26380 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 18:10:20.863 ERROR 26380 --- [nio-9090-exec-1] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 18:10:32.248 ERROR 26380 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 18:10:32.287 ERROR 26380 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 18:10:32.322 ERROR 26380 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合
+2022-07-14 18:16:09.559  INFO 36160 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 36160 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-14 18:16:09.568  INFO 36160 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-14 18:16:14.089  INFO 36160 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 18:16:14.098  INFO 36160 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$1644f4b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 18:16:14.317  INFO 36160 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-14 18:16:15.145  INFO 36160 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-14 18:16:15.166  INFO 36160 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-14 18:16:15.168  INFO 36160 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-14 18:16:15.168  INFO 36160 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-14 18:16:15.736  INFO 36160 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-14 18:16:15.737  INFO 36160 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5508 ms
+2022-07-14 18:16:19.041  INFO 36160 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-14 18:16:19.045  INFO 36160 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-14 18:16:19.047  INFO 36160 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-14 18:16:24.196  INFO 36160 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-14 18:16:24.875  INFO 36160 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Found kmodule: file:/D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes/META-INF/kmodule.xml
+2022-07-14 18:16:25.355  WARN 36160 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Unable to find pom.properties in /D:/xiaomai/workspace-idea-svn/asset/master/rule-judge-demo/target/classes
+2022-07-14 18:16:33.308  INFO 36160 --- [           main] o.d.c.k.b.impl.ClasspathKieProject       : Recursed up folders, found and used pom.xml D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\pom.xml
+2022-07-14 18:16:33.311  INFO 36160 --- [           main] o.d.c.k.b.i.InternalKieModuleProvider    : Creating KieModule for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT
+2022-07-14 18:16:33.323  INFO 36160 --- [           main] o.d.m.CanonicalKieModuleProvider         : No executable model found for artifact cn.maitian.assets:rule-judge-demo:1.0-SNAPSHOT. Falling back to resources parsing.
+2022-07-14 18:16:33.343  INFO 36160 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : Start creation of KieBase: change
+2022-07-14 18:16:36.459  INFO 36160 --- [           main] o.d.c.kie.builder.impl.KieContainerImpl  : End creation of KieBase: change
+2022-07-14 18:16:37.177  INFO 36160 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-07-14 18:16:38.205  INFO 36160 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-9090"]
+2022-07-14 18:16:38.245  INFO 36160 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-14 18:16:38.734  WARN 36160 --- [           main] d.s.r.o.OperationImplicitParameterReader : Unable to interpret the implicit parameter configuration with dataType: string, dataTypeClass: class java.lang.Void
+2022-07-14 18:16:38.780  INFO 36160 --- [           main] c.maitian.bss.modules.AssetsApplication  : Started AssetsApplication in 30.643 seconds (JVM running for 35.845)
+2022-07-14 18:16:40.864  INFO 36160 --- [-192.168.183.74] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-14 18:16:40.864  INFO 36160 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-14 18:16:40.868  INFO 36160 --- [-192.168.183.74] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-07-14 18:22:38.945 ERROR 36160 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有1个锁定集合
+2022-07-14 18:22:38.986 ERROR 36160 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有2个锁定集合
+2022-07-14 18:22:39.023 ERROR 36160 --- [nio-9090-exec-3] c.m.b.m.c.s.impl.RuleLockSetServiceImpl  : 查询上级，有0个锁定集合

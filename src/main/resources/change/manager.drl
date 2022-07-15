@@ -1,0 +1,169 @@
+package change;
+import cn.maitian.bss.modules.change.vo.RuleJudgeVO
+import cn.maitian.bss.modules.change.vo.RuleManagerVO
+import cn.maitian.bss.modules.change.model.RuleJudgeTakeAway
+
+global java.util.ArrayList managerList
+global java.util.ArrayList ruleList
+
+// inert RuleJudgeVO 时触发
+
+// 异动类型（a1.整大区异动，b1.整区域异动，c1.区域更名，i1.助理异动，j1.整店异动，k1.店组更名，
+//d1.大区总监晋升，
+//e1.大区总监异动，f1.大店区经晋升，
+//g1.业务经理晋升，h1.大店区经异动，o1.大区总监降职
+//p1.大店区经降职，l1.业务经理异动，m1.新科业务经理，n1.见习业务经理转正，说明：n1.见习业务经理转正
+//q1.业务经理降职，可能应该再增加一个经纪人异动（人事系统）
+//）’
+
+
+// 找任命人的上级
+rule "judge3-1"
+salience 79
+when
+     // 无上级任命，找异动后的 事业部总经理
+     $judge : RuleJudgeVO(hasSuperior == "0" && changeType not in ("d1"))
+     // 上级
+     $oo : RuleManagerVO(deptName == $judge.afterLargerArea) from managerList
+then
+    // TODO 判断是否是本次任命上级，增加一个标识
+    $judge.getManagerVOS().add($oo);
+    System.out.println("执行规则：judge3-1" + "---" + $judge.getAppointName() + "-的上级事业部经理-" + $judge.getManagerVOS());
+end
+
+rule "judge3-2"
+salience 78
+when
+     // 无上级任命，找异动后的 大区总监
+     $judge : RuleJudgeVO(hasSuperior == "0" && changeType not in ("e1", "f1"))
+     // 上级
+     $oo : RuleManagerVO(deptName == $judge.afterBigArea) from managerList
+//     $manager : ArrayList() from $judge.managerVOS
+//     $managers : ArrayList()
+//     from accumulate($oo : RuleManagerVO(deptName == $judge.afterBigArea) from managerList,
+//        init(ArrayList list = new ArrayList()),
+//        action(
+//          list.add($oo);
+//        ),
+//        result(list))
+then
+     $judge.getManagerVOS().add($oo);
+     System.out.println("执行规则：judge3-2" + "---" + $judge.getAppointName() + "-的上级大区总监-" + $judge.getManagerVOS());
+     update($judge)
+end
+
+rule "judge3-3"
+salience 77
+when
+     // 无上级任命，找异动后的 区域经理，并排除掉自己
+     $judge : RuleJudgeVO(hasSuperior == "0" && changeType not in ("g1", "h1", "o1"))
+     // 上级
+     $oo : RuleManagerVO(deptName == $judge.afterArea) from managerList
+then
+    $judge.getManagerVOS().add($oo);
+    System.out.println("执行规则：judge3-3" + "---" + $judge.getAppointName() + "-的上级区域经理-" + $judge.getManagerVOS());
+    update($judge)
+end
+
+rule "judge3-4"
+salience 76
+when
+     // 无上级任命，找异动后的 业务经理
+     $judge : RuleJudgeVO(hasSuperior == "0" && changeType not in ("p1", "l1", "m1", "n1"))
+     // 上级
+     $oo : RuleManagerVO(deptName == $judge.afterShop) from managerList
+then
+    $judge.getManagerVOS().add($oo);
+    System.out.println("执行规则：judge3-4" + "---" + $judge.getAppointName() + "-的上级业务经理-" + $judge.getManagerVOS());
+    update($judge)
+end
+
+
+rule "judge3-5"
+salience 75
+when
+    // 有上级任命，找异动后的 事业部总经理
+    $judge : RuleJudgeVO(hasSuperior == "1" && changeType not in ("d1"))
+    // 上级
+    $oo : RuleManagerVO(deptName == $judge.afterLargerArea) from managerList
+    $tk : RuleJudgeTakeAway($oo.deptName == afterLargerArea && afterBigArea == null) from ruleList
+then
+    RuleManagerVO vo = new RuleManagerVO();
+    vo.setDeptId($oo.getDeptId());
+    vo.setDeptName($oo.getDeptName());
+    vo.setManagerName($tk.getAppointName());
+    vo.setIdCard($tk.getIdCard());
+    vo.setManagerOldId($tk.getAppointOldId());
+
+    $judge.getManagerVOS().add(vo);
+    System.out.println("执行规则：judge3-5" + "---" + $judge.getAppointName() + "-的上级事业部经理-" + $judge.getManagerVOS());
+    update($judge)
+end
+
+
+rule "judge3-6"
+salience 74
+when
+    // 有上级任命，找异动后的 大区总监
+    $judge : RuleJudgeVO(hasSuperior == "1" && changeType not in ("e1", "f1"))
+    // 上级
+    $oo : RuleManagerVO(deptName == $judge.afterBigArea) from managerList
+    $tk : RuleJudgeTakeAway($oo.deptName == afterBigArea && afterArea == null) from ruleList
+
+then
+    RuleManagerVO vo = new RuleManagerVO();
+    vo.setDeptId($oo.getDeptId());
+    vo.setDeptName($oo.getDeptName());
+    vo.setManagerName($tk.getAppointName());
+    vo.setIdCard($tk.getIdCard());
+    vo.setManagerOldId($tk.getAppointOldId());
+
+    $judge.getManagerVOS().add(vo);
+    System.out.println("执行规则：judge3-6" + "---" + $judge.getAppointName() + "-的上级大区总监-" + $judge.getManagerVOS());
+    update($judge)
+end
+
+
+rule "judge3-7"
+salience 73
+when
+    // 有上级任命，找异动后的 区域经理
+    $judge : RuleJudgeVO(hasSuperior == "1" && changeType not in ("g1", "h1", "o1"))
+    // 上级
+    $oo : RuleManagerVO(deptName == $judge.afterArea) from managerList
+    $tk : RuleJudgeTakeAway($oo.deptName == afterArea && afterShop == null) from ruleList
+
+then
+    RuleManagerVO vo = new RuleManagerVO();
+    vo.setDeptId($oo.getDeptId());
+    vo.setDeptName($oo.getDeptName());
+    vo.setManagerName($tk.getAppointName());
+    vo.setIdCard($tk.getIdCard());
+    vo.setManagerOldId($tk.getAppointOldId());
+
+    $judge.getManagerVOS().add(vo);
+    System.out.println("执行规则：judge3-7" + "---" + $judge.getAppointName() + "-的上级区域经理-" + $judge.getManagerVOS());
+    update($judge)
+end
+
+rule "judge3-8"
+salience 72
+when
+    // 有上级任命，找异动后的 业务经理
+    $judge : RuleJudgeVO(hasSuperior == "1" && changeType not in ("p1", "l1", "m1", "n1"))
+    // 上级
+    $oo : RuleManagerVO(deptName == $judge.afterShop) from managerList
+    $tk : RuleJudgeTakeAway($oo.deptName == afterShop) from ruleList
+
+then
+    RuleManagerVO vo = new RuleManagerVO();
+    vo.setDeptId($oo.getDeptId());
+    vo.setDeptName($oo.getDeptName());
+    vo.setManagerName($tk.getAppointName());
+    vo.setIdCard($tk.getIdCard());
+    vo.setManagerOldId($tk.getAppointOldId());
+
+    $judge.getManagerVOS().add(vo);
+    System.out.println("执行规则：judge3-8" + "---" + $judge.getAppointName() + "-的上级业务经理-" + $judge.getManagerVOS());
+    update($judge)
+end

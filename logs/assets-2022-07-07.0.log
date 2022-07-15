@@ -1,0 +1,56 @@
+2022-07-07 18:14:10.423  INFO 25060 --- [           main] c.maitian.bss.modules.AssetsApplication  : Starting AssetsApplication using Java 1.8.0_251 on DESKTOP-CR with PID 25060 (D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo\target\classes started by changrui in D:\xiaomai\workspace-idea-svn\asset\master\rule-judge-demo)
+2022-07-07 18:14:10.430  INFO 25060 --- [           main] c.maitian.bss.modules.AssetsApplication  : No active profile set, falling back to 1 default profile: "default"
+2022-07-07 18:14:14.167  INFO 25060 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-07 18:14:14.174  INFO 25060 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$4c4848e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-07 18:14:14.493  INFO 25060 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-07 18:14:15.125  INFO 25060 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2022-07-07 18:14:15.152  INFO 25060 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-07 18:14:15.154  INFO 25060 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-07 18:14:15.155  INFO 25060 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-07-07 18:14:15.619  INFO 25060 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-07 18:14:15.644  INFO 25060 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4615 ms
+2022-07-07 18:14:18.459  INFO 25060 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1,master} inited
+2022-07-07 18:14:18.461  INFO 25060 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource - add a datasource named [master] success
+2022-07-07 18:14:18.463  INFO 25060 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2022-07-07 18:14:20.977  WARN 25060 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'zcOfficeApplyController': Unsatisfied dependency expressed through field 'zcOfficeApplyIService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.maitian.bss.modules.office.service.ZcOfficeApplyIService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-07-07 18:14:20.979  INFO 25060 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource start closing ....
+2022-07-07 18:14:20.987  INFO 25060 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-07-07 18:14:21.001  INFO 25060 --- [           main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-07-07 18:14:21.002  INFO 25060 --- [           main] c.b.d.d.DynamicRoutingDataSource         : dynamic-datasource all closed success,bye
+2022-07-07 18:14:21.011  INFO 25060 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-07-07 18:14:21.019  WARN 25060 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.Object.wait(Object.java:502)
+ java.util.TimerThread.mainLoop(Timer.java:526)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-07 18:14:21.020  WARN 25060 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:331)
+2022-07-07 18:14:21.021  WARN 25060 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.util.TimerThread.mainLoop(Timer.java:552)
+ java.util.TimerThread.run(Timer.java:505)
+2022-07-07 18:14:21.023  WARN 25060 --- [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [OracleTimeoutPollingThread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ oracle.jdbc.driver.OracleTimeoutPollingThread.run(OracleTimeoutPollingThread.java:152)
+2022-07-07 18:14:21.069  INFO 25060 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-07 18:14:21.127 ERROR 25060 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field zcOfficeApplyIService in cn.maitian.bss.modules.office.controller.ZcOfficeApplyController required a bean of type 'cn.maitian.bss.modules.office.service.ZcOfficeApplyIService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'cn.maitian.bss.modules.office.service.ZcOfficeApplyIService' in your configuration.
+

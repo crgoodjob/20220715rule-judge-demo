@@ -1,0 +1,97 @@
+//package change;
+//import cn.maitian.bss.modules.change.vo.RenMingVo
+//import cn.maitian.bss.modules.change.vo.RuleManagerVO
+//import cn.maitian.bss.modules.change.vo.RuleLockSetVO
+//import cn.maitian.bss.modules.change.vo.RuleOccupy
+//import cn.maitian.bss.modules.change.vo.RuleTakeAwayOccupyVO
+//import cn.maitian.bss.modules.change.vo.RuleLockRelationVO
+//import cn.maitian.bss.modules.change.vo.RuleTakeTemp
+//import cn.maitian.bss.modules.system.vo.SysDeptVO
+//import cn.maitian.bss.modules.system.vo.SysUserVO
+//import java.lang.Object
+//import java.lang.Number
+//import java.util.ArrayList
+//import java.util.HashMap
+//global java.util.ArrayList rmList
+//global cn.maitian.bss.modules.change.service.ChangeIService changeIService
+//dialect  "mvel" //方言，默认java
+//
+//// 存在大区总监晋升任命
+//rule "judge1 has LargerArea"
+//no-loop true
+//salience 2
+//    when
+//    // 任命异动类型为：大区总监异动 或 业务经理晋升
+//    $renMing : RenMingVo(changeType == "大店区经晋升" || changeType == "业务经理晋升")
+//    // 任命中存在：大区总监晋升任命 且异动后片区相同
+//    $shangji : RenMingVo(changeType == "大区总监晋升" && afterLargerArea == $renMing.afterLargerArea) from rmList
+//    // 查询异动锁定集合、异动锁定关系、限量占用记录，是否超限量
+//
+//    // 中间表，如何返回
+//    // 判定表，如何返回
+//    // 遍历
+//
+//    // 上面查询出异动锁定集合ID
+//    // 通过锁定集合ID，查询限量占用记录，
+//    // 中间表
+//    $take:ArrayList()
+//        from accumulate($oo : RuleOccupy(superiorName == $shangji.changeName) from changeIService.getRuleOccupys(),
+//        init(ArrayList list = new ArrayList()),
+//        action(
+//            RuleTakeAwayOccupyVO vo = new RuleTakeAwayOccupyVO();
+//            vo.setTakeAwayId($renMing.id);
+//            vo.setOccupyId($oo.id);
+//            list.add(vo);
+//        ),
+//        result(list))
+//
+//
+//    then
+//    System.out.println($shangji.changeType + "___" + $shangji.changeName  + "___" + "$shangji");
+//    System.out.println("有大区总监晋升" + "___" + $renMing.changeType + "___" + $renMing.changeName + "___" + "$renMing");
+//    System.out.println($take);
+//    changeIService.saveRuleTakeAwayOccupyList($take);
+//    System.out.println("");
+//end
+//
+//rule "judge1 has not LargerArea"
+//salience 2
+//    when
+//    // 任命异动类型为：大区总监异动 或 业务经理晋升
+//    $renMing : RenMingVo(changeType == "大区总监异动" || changeType == "业务经理晋升")
+//    not (RenMingVo(changeType == "大区总监晋升" && afterLargerArea == $renMing.afterLargerArea) from rmList)
+//    // 查询现有领导，调用service
+//    $shangji : SysDeptVO(deptName == $renMing.afterLargerArea) from changeIService.getLargerAreaList()
+//
+//    // 查询异动锁定集合、异动锁定关系、限量占用记录，是否超限量
+//
+//    then
+//    System.out.println("没大区总监晋升" + "___" + $renMing.changeType + "___" + $renMing.changeName + "___" + "$renMing");
+//end
+//
+//
+//
+//
+//
+//
+//
+//// 计算 是否超限量
+//rule "judge1 has LargerArea2"
+//salience 1
+//    when
+//    // 任命异动类型为：大区总监异动 或 业务经理晋升
+//    $renMing : RenMingVo(changeType == "大店区经晋升" || changeType == "业务经理晋升")
+//    // 任命中存在：大区总监晋升任命 且异动后片区相同
+//    $shangji : RenMingVo(changeType == "大区总监晋升" && afterLargerArea == $renMing.afterLargerArea) from rmList
+//
+//    $rls:RuleLockSetVO() from changeIService.getRuleLockSets()
+//
+//    $take:Number(intValue() > $rls.limitNum)
+//        from accumulate($oo : RuleOccupy(lockSetId == $rls.id) from changeIService.getRuleOccupys(),
+//        count($rls.id))
+//
+//
+//    then
+//     System.out.println($renMing.changeName + "________"+ $renMing.changeType + "_______占用______" + $take);
+//     System.out.println("");
+//end
