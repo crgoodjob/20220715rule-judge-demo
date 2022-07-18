@@ -80,6 +80,7 @@ when
                 count ++ ;
             }
         }
+
         System.out.println("count:" + count + "  LimitNum:" + $rSet.getLimitNum());
 //        if(count > $rSet.getLimitNum()){
             for(int i=0; i<$r.getManagerVOS().size(); i++){
