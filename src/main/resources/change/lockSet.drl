@@ -27,13 +27,8 @@ when
     $lockSet : ArrayList(size > 0) from collect(RuleLockSet() from ruleLockSetIService.queryRuleLockSetList($managers))
     // 查询异动锁定关系中，下属为当前任命人的记录
     $lockRelation : ArrayList() from collect(RuleLockRelation() from ruleLockRelationIService.queryRuleLockRelationList($r.appointOldId, $lockSet))
-//    from accumulate($rela : RuleLockRelation() from ruleLockRelationIService.queryRuleLockRelationList($r.appointOldId, $lockSet),
-//    init(),
-//    action(),
-//    result())
-//    $lockSet : ArrayList() from collect(RuleLockSet() from $lockSet)
 then
-    // 不知道咋写，逻辑放在这
+    // 逻辑放在这
       ArrayList<RuleLockSet> result = new ArrayList();
       for(int i=0; i<$lockSet.size(); i++){
           RuleLockSet set = (RuleLockSet)$lockSet.get(i);
@@ -86,7 +81,7 @@ when
             for(int i=0; i<$r.getManagerVOS().size(); i++){
                  RuleManagerVO vo = (RuleManagerVO)$r.getManagerVOS().get(i);
                 if($rSet.getAppointOldId().toString().equals(vo.getManagerOldId().toString())){
-                    result = result +  vo.getDeptName() + "-" + vo.getManagerName();
+                    result = result +  vo.getDeptName() + "-" + vo.getManagerName() + "<br/>";
                 }
             }
 //        }
