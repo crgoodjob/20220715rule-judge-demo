@@ -40,8 +40,8 @@ when
     $judge : RuleJudgeVO(changeType == "f1" || changeType == "g1")
     RuleJudgeTakeAway(changeType == "d1" && afterLargerArea == $judge.afterLargerArea) from ruleList
 then
-    System.out.println("执行规则：judge2-1" + "---" + $judge.getAppointName() + "___有上级任命");
     $judge.setHasSuperior("1");
+    System.out.println("执行规则：judge2-1" + "---" + $judge.getAppointName() + "___有上级任命" + $judge);
     update($judge)
     //modify(){
     //    $judge.setHasSuperior("1");
@@ -58,8 +58,8 @@ when
     // 大区总监晋升
     not (RuleJudgeTakeAway(changeType == "d1" && afterLargerArea == $judge.afterLargerArea) from ruleList)
 then
-    System.out.println("执行规则：judge2-2" + "---" + $judge.getAppointName() + "___无上级任命");
     $judge.setHasSuperior("0");
+    System.out.println("执行规则：judge2-2" + "---" + $judge.getAppointName() + "___无上级任命" + $judge);
     update($judge)
 end
 
